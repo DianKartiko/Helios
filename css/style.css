@@ -212,7 +212,7 @@
     }
 
     .link-footer{
-        margin-bottom: 3rem;
+        display: none;
     }
 }
 
