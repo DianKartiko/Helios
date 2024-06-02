@@ -64,8 +64,8 @@
     <body class="background">
         <!-- Navbar -->
         <section class="mt-20">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg fixed-top background">
+                <div class="container-fluid container-xxl">
                     <a
                         class="navbar-brand fw-semibold woodsmoke-950 text-2xl"
                         href="#home"
@@ -154,7 +154,7 @@
                         <img
                         src="assets/image/Hero.png"
                         alt="Hero-Image"
-                        width="512"
+                        width="600"
                         height="auto"
                         loading="lazy"
                         data-aos="zoom-in"
@@ -167,7 +167,7 @@
 
         <!-- About Section -->
         <section id="about" class="about pt-50 pb-50">
-            <div class="container-fluid">
+            <div class="container-xxl container-fluid">
                 <div class="row gap-lg">
                     <!-- About grid -->
                     <div class="col-lg-6 ">
@@ -234,7 +234,7 @@
 
         <!-- Resume -->
         <section id="resume" class="resume pt-50 pb-50">
-            <div class="container-fluid">
+            <div class="container-xxl container-fluid">
                 <div class="row gap-lg">
                     <div class="col-lg-6">
 
@@ -262,134 +262,31 @@
                         <!-- Heading -->
                         <h2 class="text-2xl fw-bold teal-400 mb-32"><i class="uil uil-desktop text-3xl teal-400 me-2"></i>Skills</h2>
 
-                        <p class="text-sm fw-regular woodsmoke-500 mb-16 ">Programming Skills</p>
-                        <!-- HTML -->
-                        <div class="html mb-16">
-                            <div class="d-flex gap-4 justify-content-center align-items-center ">
-                                <div class="design">
-                                    <img src="assets/icon/html.svg" alt="icon"
-                                    width="30"
-                                    height="30"
-                                    loading="lazy">
-                                </div>
-                                
-                                <div class="border-progress">
-                                    <div class="inner-progress"></div>
-                                </div>
-    
-                                <h4 class="text-normal fw-medium woodsmoke-500 text-sm">85%</h4>
-                            </div>
-                        </div>
-                        
-
-                        <!-- CSS -->
-                        <div class="css mb-16">
-                            <div class="d-flex gap-4 justify-content-center align-items-center mb-16">
-                                <div class="design">
-                                    <img src="assets/icon/css.svg" alt="icon"
-                                    width="30"
-                                    height="30"
-                                    loading="lazy">
-                                </div>
-                                
-                                <div class="border-progress">
-                                    <div class="inner-progress"></div>
-                                </div>
-    
-                                <h4 class="text-normal fw-medium woodsmoke-500 text-sm">80%</h4>
-                            </div>
-                        </div>
-
-                        <!-- JS -->
-                        <div class="js mb-16">
-                            <div class="d-flex gap-4 justify-content-center align-items-center mb-16">
-                                <div class="design">
-                                    <img src="assets/icon/javascripts.svg" alt="icon"
-                                    width="30"
-                                    height="30"
-                                    loading="lazy">
-                                </div>
-                                
-                                <div class="border-progress">
-                                    <div class="inner-progress"></div>
-                                </div>
-    
-                                <h4 class="text-normal fw-medium woodsmoke-500 text-sm">60%</h4>
-                            </div>
-                        </div>
-
-                        <!-- Bootstrap -->
-                        <div class="bootstrap mb-16">
-                            <div class="d-flex gap-4 justify-content-center align-items-center mb-16">
-                                <div class="design">
-                                    <img src="assets/icon/bootstrap.svg" alt="icon"
-                                    width="30"
-                                    height="30"
-                                    loading="lazy">
-                                </div>
-                                
-                                <div class="border-progress">
-                                    <div class="inner-progress"></div>
-                                </div>
-    
-                                <h4 class="text-normal fw-medium woodsmoke-500 text-sm">89%</h4>
-                            </div>
-                        </div>
-
-                        <!-- Tailwind -->
-                        <div class="tailwind mb-16">
-                            <div class="d-flex gap-4 justify-content-center align-items-center mb-16">
-                                <div class="design">
-                                    <img src="assets/icon/tailwind-css.svg" alt="icon"
-                                    width="30"
-                                    height="30"
-                                    loading="lazy">
-                                </div>
-                                
-                                <div class="border-progress">
-                                    <div class="inner-progress"></div>
-                                </div>
-    
-                                <h4 class="text-normal fw-medium woodsmoke-500 text-sm">50%</h4>
-                            </div>
-                        </div>
-
-                        <div class="python mb-32">
-                            <div class="d-flex gap-4 justify-content-center align-items-center mb-16">
-                                <div class="design">
-                                    <img src="assets/icon/python.svg" alt="icon"
-                                    width="30"
-                                    height="30"
-                                    loading="lazy">
-                                </div>
-                                
-                                <div class="border-progress">
-                                    <div class="inner-progress"></div>
-                                </div>
-    
-                                <h4 class="text-normal fw-regular woodsmoke-500 text-sm">77%</h4>
-                            </div>
-                        </div>
-
-                        <!-- Design Skill -->
-                        <p class="text-sm fw-medium woodsmoke-500 text-start mb-16 ">Design Skill</p>
-                        <!-- HTML -->
-                        <div class="figma mb-16">
-                            <div class="d-flex gap-4 justify-content-center align-items-center ">
-                                <div class="design">
-                                    <img src="assets/icon/figma.svg" alt="icon"
-                                    width="30"
-                                    height="30"
-                                    loading="lazy">
-                                </div>
-                                
-                                <div class="border-progress">
-                                    <div class="inner-progress"></div>
-                                </div>
-    
-                                <h4 class="text-normal fw-medium woodsmoke-500 text-sm">92%</h4>
-                            </div>
-                        </div>
+                        <table class="table">
+                            <thead>
+                              <tr class="woodsmoke-900 fw-semibold text-normal">
+                                <th scope="col">Code</th>
+                                <th scope="col">Design</th>
+                              </tr>
+                            </thead>
+                            <tbody class="woodsmoke-500 fw-regular text-sm">
+                              <tr>
+                                <td>HTML5</td>
+                                <td>Figma</td>
+                              </tr>
+                              <tr>
+                                <td>CSS3</td>
+                                <td>Bootstrap</td>
+                              </tr>
+                              <tr>
+                                <td>JavaScript</td>
+                                <td>Tailwind</td>
+                              </tr>
+                              <tr>
+                                <td>Python</td>
+                              </tr>
+                            </tbody>
+                          </table>
                     </div>
                 </div>
             </div>
@@ -398,7 +295,7 @@
 
         <!-- Project -->
         <section id="project" class="project pt-50 pb-50">
-            <div class="container-fluid">
+            <div class="container-xxl container-fluid">
 
                 <div class="row gap-lg mb-24">
                     <div class="col-lg-6">
@@ -493,7 +390,7 @@
 
         <!-- Experience -->
         <section id="exp" class="experience pt-50 pb-50">
-            <div class="container-fluid">
+            <div class="container-xxl container-fluid">
                 <div class="row gap-lg">
 
                     <!-- Work -->
@@ -565,7 +462,7 @@
 
         <!-- Footer -->
         <footer class="footer mt-32 mb-32">
-            <div class="container-fluid">
+            <div class="container-xxl container-fluid">
                 <div class="row gap-lg">
                     <div class="col-lg-6 text-center link-footer">
                         <a href="#home" class="text-decoration-none text-sm woodsmoke-900 fw-medium py-12 px-12">Home</a>

@@ -223,6 +223,10 @@
     margin-top: 1.875rem;
 }
 
+.mb-64{
+    margin-bottom: 4rem;
+}
+
 .mt-10 {
     padding-top: 0.625rem;
 }
