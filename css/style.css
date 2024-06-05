@@ -33,8 +33,6 @@
     background-color: #2dd4bf;
     color: white;
     font-weight: 500;
-    transition: ease-in-out;
-    transition-duration: 300ms;
 }
 
 .btn-link-cv:hover{
@@ -169,8 +167,6 @@
     color: white;
     border: none;
     font-weight: 500;
-    transition: ease-in-out;
-    transition-duration: 300ms;
 }
 
 .btn-submit:hover{

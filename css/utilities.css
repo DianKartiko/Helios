@@ -277,6 +277,10 @@
     margin-top: 2.5rem;
 }
 
+.ms-56{
+    margin-left: 3.5rem;
+}
+
 .me-20 {
     margin-right: 1.25rem;
 }
@@ -307,6 +311,10 @@
 
 .mt-24 {
     margin-top: 1.5rem;
+}
+
+.ms-24 {
+    margin-left: 1.5rem;
 }
 
 .mb-20 {
