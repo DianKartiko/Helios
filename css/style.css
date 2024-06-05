@@ -217,7 +217,7 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
     .navbar-nav {
         border: none;
         border-radius: none;
