@@ -150,6 +150,10 @@
     padding-top: 9.063rem;
 }
 
+.pt-48{
+    padding-top: 3rem;
+}
+
 .pt-0 {
     padding-top: 0rem;
 }
@@ -235,6 +239,10 @@
 
 .mt-30 {
     margin-top: 1.875rem;
+}
+
+.mb-30 {
+    margin-bottom : 1.875rem;
 }
 
 .mb-64{
