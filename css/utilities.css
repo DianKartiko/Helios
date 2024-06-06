@@ -277,6 +277,10 @@
     margin-top: 2.5rem;
 }
 
+.ms-48{
+    margin-left: 3rem;
+}
+
 .ms-56{
     margin-left: 3.5rem;
 }
@@ -291,6 +295,10 @@
 
 .mb-16 {
     margin-bottom: 1rem;
+}
+
+.ms-16 {
+    margin-left: 1rem;
 }
 
 .mb-12 {
