@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container */
+.container-fluid {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container-fluid {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container-fluid {
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container-fluid {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-xxl {
+        max-width: 1420px;
+    }
+}
+/*  */
+
+/* Padding */
+.pt-40 {
+    padding-top: 2.5rem;
+}
+
+.pb-40 {
+    padding-bottom: 2.5rem;
+}
+
+.pt-30 {
+    padding-top: 1.875rem;
+}
+
+.pb-30 {
+    padding-bottom: 1.875rem;
+}
+
+.ps-30 {
+    padding-left: 1.875rem;
+}
+
+.pe-30 {
+    padding-right: 1.875rem;
+}
+
+.pt-10 {
+    padding-top: 0.625rem;
+}
+
+.pb-10 {
+    padding-bottom: 0.625rem;
+}
+
+.pt-100 {
+    padding-top: 6.25rem;
+}
+
+.pb-100 {
+    padding-bottom: 6.25rem;
+}
+
+.pt-70 {
+    padding-top: 4.375rem;
+}
+
+.pt-50 {
+    padding-top: 3.125rem;
+}
+
+.pb-50 {
+    padding-bottom: 3.125rem;
+}
+
+.pb-15 {
+    padding-bottom: 0.938rem;
+}
+
+.pt-15 {
+    padding-top: 0.938rem;
+}
+
+.pt-60 {
+    padding-top: 3.75rem;
+}
+
+.ps-15 {
+    padding-left: 0.938rem;
+}
+
+.pe-15 {
+    padding-right: 0.938rem;
+}
+
+.pb-20 {
+    padding-bottom: 1.25rem;
+}
+
+.pt-20 {
+    padding-top: 1.25rem;
+}
+
+.pb-47 {
+    padding-bottom: 2.938rem;
+}
+
+.pb-52 {
+    padding-bottom: 3.25rem;
+}
+
+.pt-130 {
+    padding-top: 8.125rem;
+}
+
+.pt-150 {
+    padding-top: 9.375rem;
+}
+
+.pb-150 {
+    padding-bottom: 9.375rem;
+}
+
+.pb-80 {
+    padding-bottom: 5rem;
+}
+
+.pt-145 {
+    padding-top: 9.063rem;
+}
+
+.pt-48 {
+    padding-top: 3rem;
+}
+
+.pt-0 {
+    padding-top: 0rem;
+}
+
+.pt-73 {
+    padding-top: 4.563rem;
+}
+
+.pe-8 {
+    padding-right: 0.5rem;
+}
+
+.ps-8 {
+    padding-left: 0.5rem;
+}
+
+.pt-8 {
+    padding-top: 0.5rem;
+}
+
+.pb-8 {
+    padding-bottom: 0.5rem;
+}
+
+.py-8 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.px-8 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.px-12 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.py-12 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.px-16 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.py-16 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.p-32 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.p-24 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+/*  */
+
+/* Margin */
+.m-32 {
+    margin: 2rem;
+}
+
+.mb-32 {
+    margin-bottom: 2rem;
+}
+
+.mt-32 {
+    margin-top: 2rem;
+}
+
+.mt-30 {
+    margin-top: 1.875rem;
+}
+
+.mb-30 {
+    margin-bottom: 1.875rem;
+}
+
+.mb-64 {
+    margin-bottom: 4rem;
+}
+
+.mt-10 {
+    padding-top: 0.625rem;
+}
+
+.mt-20 {
+    margin-top: 1.25rem;
+}
+
+.mt-25 {
+    margin-top: 1.563rem;
+}
+
+.mt-6 {
+    margin-top: 0.375rem;
+}
+
+.mt-12 {
+    margin-top: 0.75rem;
+}
+
+.mb-25 {
+    margin-bottom: 1.563rem;
+}
+
+.mb-30 {
+    margin-bottom: 1.875rem;
+}
+
+.mb-40 {
+    margin-bottom: 2.5rem;
+}
+
+.mt-40 {
+    margin-top: 2.5rem;
+}
+
+.ms-48 {
+    margin-left: 3rem;
+}
+
+.ms-56 {
+    margin-left: 3.5rem;
+}
+
+.me-20 {
+    margin-right: 1.25rem;
+}
+
+.mb-10 {
+    margin-bottom: 0.625rem;
+}
+
+.mb-16 {
+    margin-bottom: 1rem;
+}
+
+.ms-16 {
+    margin-left: 1rem;
+}
+
+.mb-12 {
+    margin-bottom: 0.75rem;
+}
+
+.ms-12 {
+    margin-left: 0.75rem;
+}
+
+.mb-6 {
+    margin-bottom: 0.375rem;
+}
+
+.mb-24 {
+    margin-bottom: 1.5rem;
+}
+
+.mt-24 {
+    margin-top: 1.5rem;
+}
+
+.ms-24 {
+    margin-left: 1.5rem;
+}
+
+.mb-20 {
+    margin-bottom: 1.25rem;
+}
+
+.mb-14 {
+    margin-bottom: 0.875rem;
+}
+
+.ms-8 {
+    margin-left: 0.5rem;
+}
+
+.mb-8 {
+    margin-bottom: 0.5rem;
+}
+
+.mt-8 {
+    margin-bottom: 0.5rem;
+}
+
+.ms-16 {
+    margin-left: 1rem;
+}
+.mt-4 {
+    margin-top: 0.25rem;
+}
+
+.ms-4 {
+    margin-left: 0.25rem;
+}
+
+.ms-2 {
+    margin-left: 0.125rem;
+}
+
+.me-2 {
+    margin-right: 0.125rem;
+}
+/*  */
+
+/* Color Palette */
+.woodsmoke-950 {
+    color: #1b1b1b;
+}
+
+.woodsmoke-900 {
+    color: #3d3d3d;
+}
+
+.woodsmoke-500 {
+    color: #6d6d6d;
+}
+
+.background {
+    background-color: #fefefe;
+}
+
+.teal-400 {
+    color: #2dd4bf;
+}
+
+.star {
+    color: #f59e0b;
+}
+
+.bg-teal-400{
+    background-color: #2dd4bf;
+}
+
+/*  */
+
+/* FONT */
+.fw-semibold {
+    font-weight: 600;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-regular {
+    font-weight: 400;
+}
+
+.text-5xl {
+    /* 40px */
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.text-4xl {
+    /* 32px */
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.text-3xl {
+    /* 28px */
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+}
+
+.text-2xl {
+    /* 24px */
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.text-xl {
+    /* 20px */
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.text-lg {
+    /* 18px */
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.text-normal {
+    /* 16px */
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.text-sm {
+    /* 14px */
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.text-xs {
+    /* 12px */
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.text-xxs {
+    /* 10px */
+    font-size: 0.625rem;
+    line-height: 1rem;
+}
+/*  */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+/* Medium devices (landscape phones, 768px and up) */
+@media (min-width: 768px) {
+    /* Padding */
+    .pe-md-25 {
+        padding-right: 1.563rem;
+    }
+
+    .ps-md-25 {
+        padding-left: 1.563rem;
+    }
+
+    .pt-md-50 {
+        padding-top: 3.125rem !important;
+    }
+
+    .pb-md-50 {
+        padding-bottom: 3.125rem;
+    }
+
+    .pb-md-15 {
+        padding-bottom: 0.938rem;
+    }
+
+    .pt-md-15 {
+        padding-top: 0.938rem;
+    }
+
+    .ps-md-15 {
+        padding-left: 0.938rem;
+    }
+
+    .pe-md-15 {
+        padding-right: 0.938rem;
+    }
+
+    .pb-md-145 {
+        padding-bottom: 9.063rem;
+    }
+
+    .pt-md-100 {
+        padding-top: 6.25rem;
+    }
+
+    .pt-md-179 {
+        padding-top: 11.188rem;
+    }
+
+    .pb-md-179 {
+        padding-bottom: 11.188rem;
+    }
+
+    .pt-md-145 {
+        padding-top: 9.063rem;
+    }
+
+    .pb-md-212 {
+        padding-bottom: 13.25rem;
+    }
+
+    /*  */
+
+    /* Margin */
+    .mb-md-10 {
+        margin-bottom: 0.625rem !important;
+    }
+    /*  */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* Padding */
+    .pt-lg-100 {
+        padding-top: 6.25rem;
+    }
+
+    .pb-lg-100 {
+        padding-bottom: 6.25rem;
+    }
+
+    .pt-lg-227 {
+        padding-top: 14.188rem;
+    }
+
+    .pb-lg-227 {
+        padding-bottom: 14.188rem;
+    }
+
+    .pe-lg-60 {
+        padding-right: 3.75rem;
+    }
+
+    .ps-lg-60 {
+        padding-left: 3.75rem;
+    }
+
+    .pt-lg-60 {
+        padding-top: 3.75rem;
+    }
+
+    .pt-lg-145 {
+        padding-top: 9.063rem;
+    }
+
+    .pb-lg-145 {
+        padding-bottom: 9.063rem;
+    }
+
+    .pt-lg-40 {
+        padding-top: 2.5rem;
+    }
+
+    .pb-lg-40 {
+        padding-bottom: 2.5rem;
+    }
+
+    .pt-lg-50 {
+        padding-top: 3.125rem;
+    }
+
+    .pb-lg-50 {
+        padding-bottom: 3.125rem;
+    }
+    /*  */
+
+    /* Margin */
+    .me-lg-35 {
+        margin-right: 2.2rem;
+    }
+
+    .ms-lg-35 {
+        margin-left: 2.2rem;
+    }
+
+    .me-lg-20 {
+        margin-right: 1.25rem;
+    }
+
+    .ms-lg-40 {
+        margin-left: 2.5rem;
+    }
+
+    /*  */
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container-fluid {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-xxl {
+        max-width: 1420px;
+    }
+}
+
+/*  */

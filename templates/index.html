@@ -1,0 +1,1373 @@
+{% extends "base/base.html"%}
+
+<!-- title -->
+{%block title%} Helios {%endblock%}
+
+<!-- Content -->
+{%block content%}
+<!-- Navbar -->
+<section class="mt-20 mb-64">
+    <nav class="navbar navbar-expand-lg fixed-top background">
+        <div class="container-fluid container-xxl">
+            <a
+                class="navbar-brand fw-semibold woodsmoke-950 text-2xl"
+                href="#home"
+                >Helios</a
+            >
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div
+                    class="navbar-nav woodsmoke-900 fw-medium ms-auto text-sm fw-regular"
+                >
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#resume">Resume</a>
+                    <a class="nav-link" href="{{url_for('update')}}"
+                        >Articles</a
+                    >
+                    <a class="nav-link" href="#project">Project</a>
+                    <a class="nav-link" href="#exp">Contacts</a>
+                </div>
+                <!-- <div
+                    class="toggle-button d-flex justify-content-end align-items-center"
+                >
+                    <i
+                        class="uil uil-moonset text-3xl theme-button teal-400"
+                        id="theme-button"
+                    ></i>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+</section>
+
+<!-- Home Section -->
+<section id="home" class="header pt-lg-60 pb-50">
+    <div class="container-xxl container-fluid">
+        <div class="row gap-lg-0 gap-5">
+            <div class="col-lg-6 col-12 my-auto">
+                <p class="text-support text-lg teal-400 fw-medium">
+                    Dian Wicaksono,
+                </p>
+                <h1 class="header-title woodsmoke-950 fw-bold text-4xl">
+                    I am a Designer and Junior Front-end Developer.
+                </h1>
+                <p class="mt-32 text-sm woodsmoke-500 fw-regular">
+                    A creative designer and junior programmer dedicated to
+                    developing innovative solutions for products and businesses,
+                    ensuring appealing and functional outcomes. Passionate about
+                    fresh, practical ideas that drive success.
+                </p>
+                <div class="d-flex gap-4 mt-12 mb-24 icon">
+                    <a
+                        href="https://github.com/DianKartiko"
+                        class="text-3xl woodsmoke-500"
+                        target="_blank"
+                        ><i class="uil uil-github"></i
+                    ></a>
+                    <a
+                        href="https://x.com/BaseleusNara?t=sWKqvIRNvp-E9aKY7dRxew&s=09"
+                        class="text-3xl woodsmoke-500"
+                        target="_blank"
+                        ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                    <a
+                        href="https://www.instagram.com/helios.ui?igsh=OW1sZmszc2hycW90"
+                        class="text-3xl woodsmoke-500"
+                        target="_blank"
+                        ><i class="uil uil-instagram"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/dian-wicaksono-b729a6272/"
+                        class="text-3xl woodsmoke-500"
+                        target="_blank"
+                        ><i class="uil uil-linkedin"></i
+                    ></a>
+                </div>
+
+                <div class="button mt-32">
+                    <a
+                        href="../static/assets/documents/Dian-Kartiko-Wicaksono-Resume.pdf"
+                        class="btn-link-cv"
+                        target="_blank"
+                        >Download CV</a
+                    >
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12 my-auto hero-image">
+                <img
+                    src="{{url_for('static', filename='assets/kit/Hero.png')}}"
+                    alt="Hero-Image"
+                    width="600"
+                    height="auto"
+                    loading="lazy"
+                    data-aos="zoom-in"
+                />
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Home Section -->
+
+<!-- slider -->
+<section id="slider" class="slider">
+    <div class="container-fluid container-xxl">
+        <div class="slider">
+            <div
+                class="slide-track d-flex justify-content-center align-items-center"
+            >
+                <div class="slide d-flex align-items-center gap-3">
+                    <img
+                        src="../static/assets/svg/html.svg"
+                        height="48"
+                        width="48"
+                        alt=""
+                    />
+                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">HTML5</p>
+                </div>
+                <div class="slide d-flex align-items-center gap-3">
+                    <img
+                        src="../static/assets/svg/css.svg"
+                        height="48"
+                        width="48"
+                        alt=""
+                    />
+                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">CSS3</p>
+                </div>
+                <div class="slide d-flex align-items-center gap-3">
+                    <img
+                        src="../static/assets/svg/javascripts.svg"
+                        height="48"
+                        width="48"
+                        alt=""
+                    />
+                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">
+                        JavaScript
+                    </p>
+                </div>
+                <div class="slide d-flex align-items-center gap-3">
+                    <img
+                        src="../static/assets/svg/bootstrap.svg"
+                        height="48"
+                        width="48"
+                        alt=""
+                    />
+                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">
+                        Bootstrap
+                    </p>
+                </div>
+                <div class="slide d-flex align-items-center gap-3">
+                    <img
+                        src="../static/assets/svg/tailwind-css.svg"
+                        height="48"
+                        width="48"
+                        alt=""
+                    />
+                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">
+                        TailwindCSS
+                    </p>
+                </div>
+                <div class="slide d-flex align-items-center gap-3">
+                    <img
+                        src="../static/assets/svg/python.svg"
+                        height="48"
+                        width="48"
+                        alt=""
+                    />
+                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">Python</p>
+                </div>
+                <div class="slide d-flex align-items-center gap-3">
+                    <img
+                        src="../static/assets/svg/arduino.svg"
+                        height="48"
+                        width="48"
+                        alt=""
+                    />
+                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">
+                        Arduino
+                    </p>
+                </div>
+
+                <div class="slide d-flex align-items-center gap-3">
+                    <img
+                        src="../static/assets/svg/figma.svg"
+                        height="48"
+                        width="48"
+                        alt=""
+                    />
+                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">Figma</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- slider -->
+
+<!-- About Section -->
+<section id="about" class="about pt-50 pb-50">
+    <div class="container-xxl container-fluid">
+        <div class="row gap-lg">
+            <!-- About grid -->
+            <div class="col-lg-6">
+                <!-- Heading -->
+                <h2 class="text-2xl fw-bold teal-400 text-start mb-32">
+                    <i
+                        class="uil uil-user-circle text-3xl teal-400 me-2 text-start"
+                    ></i
+                    >About Me
+                </h2>
+                <!-- Heading -->
+                <p class="about-text text-normal fw-regular woodsmoke-500">
+                    I am a professional freelancer specializing in technology,
+                    focusing on UI/UX Design and Front-End Development. With a
+                    high learning spirit, creativity, and a passion for
+                    challenges, I adapt to any situation effortlessly. My
+                    dedication to creating intuitive and engaging user
+                    experiences drives me to continuously expand my skills and
+                    knowledge. I strive to deliver high-quality results for
+                    every project, ensuring that my work contributes to the
+                    success and satisfaction of my clients. My ability to tackle
+                    complex problems and develop innovative solutions makes me a
+                    valuable asset in any team or project.
+                </p>
+            </div>
+
+            <!-- What i do -->
+            <div class="col-lg-6 what">
+                <!-- Heading -->
+                <h4 class="text-2xl fw-bold text-start mb-24 teal-400">
+                    <i class="uil uil-edit-alt text-3xl teal-400 me-2"></i
+                    >Services
+                </h4>
+                <!-- Heading -->
+
+                <!-- 1 -->
+                <div
+                    class="d-flex gap-4 justify-content-center align-items-center"
+                >
+                    <div class="design">
+                        <img
+                            src="../static/assets/svg/figma.svg"
+                            alt="About-icon"
+                            width="64"
+                            height="64"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div>
+                        <h4 class="text-lg fw-semibold woodsmoke-900">
+                            UI/UX Design
+                        </h4>
+                        <p class="text-sm fw-regular woodsmoke-500">
+                            Skilled in design, wireframing, and prototyping
+                            using tools like Figma, delivering intuitive and
+                            engaging user experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div
+                    class="d-flex gap-4 justify-content-center align-items-center"
+                >
+                    <div class="design">
+                        <img
+                            src="../static/assets/svg/vscode.svg"
+                            alt="About-icon"
+                            width="64"
+                            height="64"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div>
+                        <h4 class="text-lg fw-semibold woodsmoke-900">
+                            Web Design
+                        </h4>
+                        <p class="text-sm fw-regular woodsmoke-500">
+                            Skilled in slicing designs from Figma using HTML,
+                            CSS3, JavaScript, and other technologies to create
+                            responsive web interfaces.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div
+                    class="d-flex gap-4 justify-content-center align-items-center"
+                >
+                    <div class="design">
+                        <img
+                            src="../static/assets/svg/python.svg"
+                            alt="About-icon"
+                            width="64"
+                            height="64"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div>
+                        <h4 class="text-lg fw-semibold woodsmoke-900">
+                            Programming
+                        </h4>
+                        <p class="text-sm fw-regular woodsmoke-500">
+                            Knowledgeable in fundamental programming concepts
+                            using various languages such as Python, C, and
+                            JavaScript.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section -->
+
+<!-- Resume -->
+<section id="resume" class="resume pt-50 pb-50">
+    <div class="container-xxl container-fluid">
+        <div class="row gap-lg">
+            <div class="col-lg-6">
+                <!-- Heading -->
+                <h2 class="text-2xl fw-bold teal-400 text-start mb-32">
+                    <i
+                        class="uil uil-graduation-cap text-3xl teal-400 text-start me-2"
+                    ></i
+                    >Education
+                </h2>
+
+                <!-- Binus -->
+                <div class="mb-24">
+                    <!-- Binus -->
+                    <p
+                        class="date py-8 text-sm woodsmoke-500 fw-500 text-start"
+                    >
+                        <span class="ms-2">2022 - Present</span>
+                    </p>
+                    <h2
+                        class="text-lg fw-semibold woodsmoke-900 text-start mb-8"
+                    >
+                        Bina Nusantara University
+                    </h2>
+                    <p class="text-sm fw-regular woodsmoke-500">
+                        As a Computer Science student at Bina Nusantara, one of
+                        the top accredited universities in Indonesia, I receive
+                        comprehensive support both academically and
+                        psychologically. This university not only helps me
+                        develop critical thinking skills but also fosters better
+                        habits for the future.
+                    </p>
+                </div>
+
+                <!-- BWA -->
+                <div>
+                    <!-- Binus -->
+                    <p
+                        class="date py-8 text-sm woodsmoke-500 fw-500 text-start"
+                    >
+                        <span class="ms-2">2021 - Present</span>
+                    </p>
+                    <h2
+                        class="text-lg fw-semibold woodsmoke-900 text-start mb-8"
+                    >
+                        Build With Angga Online Course
+                    </h2>
+                    <p class="text-sm fw-regular woodsmoke-500">
+                        I have taken online courses on the Build With Angga
+                        platform for UI/UX Design and Web Development. Through
+                        these courses, I earned several certifications and
+                        developed adequate skills. This experience has given me
+                        the confidence and readiness to compete in the job
+                        market, thanks to the knowledge and expertise I gained
+                        from these classes.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="col-lg-6">
+                <h2 class="text-2xl fw-bold mb-24 text-start teal-400">
+                    <i class="uil uil-bag text-2xl teal-400 text-start me-2"></i
+                    >Experience
+                </h2>
+
+                <!-- Zona -->
+                <a
+                    href="https://zonamediagroup.id/"
+                    class="zona-media"
+                    target="_blank"
+                >
+                    <div class="content-zona">
+                        <div class="align-items-start">
+                            <h4 class="text-lg fw-semibold woodsmoke-900">
+                                Zona Media Group
+                            </h4>
+                            <p class="text-sm fw-regular woodsmoke-500">
+                                Internship Front-end Developer<br />
+                                June - September 2024
+                            </p>
+                            <p class="text-sm fw-regular woodsmoke-500">
+                                As a website developer intern at Zona Media
+                                Group, I successfully crafted a comprehensive
+                                company profile and a user-friendly website for
+                                their subsidiary, Class Program.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#home" class="helios">
+                    <!-- Freelance -->
+                    <div class="content-helios">
+                        <div class="align-items-center">
+                            <h4 class="text-lg fw-semibold woodsmoke-900">
+                                Helios.ui
+                            </h4>
+                            <p class="text-sm fw-regular woodsmoke-500">
+                                UI/UX Designer | Front-end Developer <br />
+                                2023 - Present
+                            </p>
+                            <p class="text-sm fw-regular woodsmoke-500">
+                                As a freelance UI/UX designer and front-end
+                                developer at Helios.ui, I craft visually
+                                stunning and highly functional digital
+                                experiences. My expertise lies in Figma to
+                                create user-centric interfaces.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Experience -->
+        </div>
+    </div>
+</section>
+<!-- Resume -->
+
+<!-- Project -->
+<section id="project" class="project pt-50 pb-50">
+    <div class="container-xxl container-fluid">
+        <div class="row gap-lg mb-24">
+            <div class="col-lg-6">
+                <h1 class="text-2xl fw-bold mb-16 text-start teal-400">
+                    <i
+                        class="uil uil-scenery text-2xl teal-400 text-start me-2"
+                    ></i
+                    >Gallery
+                </h1>
+                <h2
+                    class="text-2xl fw-semibold woodsmoke-900 text-start mb-8 text-start heading-project"
+                >
+                    Check out my portfolio of design and website creations.
+                </h2>
+                <p
+                    class="text-sm fw-regular woodsmoke-500 text-start text-project-heading"
+                >
+                    Enjoy my gallery. Find inspiration through the designs and
+                    projects I've created. I hope you appreciate each piece.
+                    Thank you for visiting and exploring my work.
+                </p>
+            </div>
+        </div>
+
+        <div class="row gap-lg justify-content-center d-flex">
+            <!-- Card-1 -->
+            <a
+                href="{{url_for('exotic')}}"
+                class="wrapping-card col-lg-4 col-md-6"
+                data-aos="zoom-in"
+                data-aos-duration="300"
+            >
+                <!-- Image -->
+                <img
+                    src="{{url_for('static', filename='assets/project/7-1.png')}}"
+                    alt="Project-image"
+                    width="auto"
+                    height="60"
+                    loading="lazy"
+                    class="rounded-2 mb-16"
+                />
+
+                <!-- Paragraf -->
+                <div class="container-text">
+                    <h2 class="title-card fw-semibold woodsmoke-900 text-lg">
+                        Exotic
+                    </h2>
+                    <p class="text-sm woodsmoke-500 fw-regular">
+                        Exotic: Platform designed to showcase stunning artworks,
+                        providing a space for artists to display their
+                        creativity.
+                    </p>
+                    <p class="link-fake text-sm woodsmoke-500 fw-semibold">
+                        View <i class="fa-solid fa-link"></i>
+                    </p>
+                </div>
+            </a>
+            <!-- Card-1 -->
+
+            <!-- Card-2 -->
+            <a
+                href="{{url_for('linear')}}"
+                class="wrapping-card col-lg-4 col-md-6"
+                data-aos="zoom-in"
+                data-aos-duration="400"
+            >
+                <!-- Image -->
+                <img
+                    src="{{url_for('static', filename='assets/project/1.png')}}"
+                    alt="Project-image"
+                    width="auto"
+                    height="60"
+                    loading="lazy"
+                    class="rounded-2 mb-16"
+                />
+
+                <!-- Paragraf -->
+                <div class="container-text">
+                    <h2 class="title-card fw-semibold woodsmoke-900 text-lg">
+                        Linear
+                    </h2>
+                    <p class="text-sm woodsmoke-500 fw-regular">
+                        Fresh mathematical LMS for mobile apps, providing
+                        interactive and effective learning anytime, anywhere.
+                    </p>
+                    <p class="link-fake text-sm woodsmoke-500 fw-semibold">
+                        View <i class="fa-solid fa-link"></i>
+                    </p>
+                </div>
+            </a>
+            <!-- Card-2 -->
+
+            <!-- Card-3 -->
+            <a
+                href="{{url_for('nest')}}"
+                class="wrapping-card col-lg-4 col-md-6"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+            >
+                <!-- Image -->
+                <img
+                    src="{{url_for('static', filename='assets/project/2.jpg')}}"
+                    alt="Project-image"
+                    width="auto"
+                    height="60"
+                    loading="lazy"
+                    class="rounded-2 mb-16"
+                />
+
+                <!-- Paragraf -->
+                <div class="container-text">
+                    <h2 class="title-card fw-semibold woodsmoke-900 text-lg">
+                        Nest
+                    </h2>
+                    <p class="text-sm woodsmoke-500 fw-regular">
+                        Enjoy music with a fresh and simple design in Nest,
+                        creating a comfortable and enjoyable listening
+                        experience.
+                    </p>
+                    <p class="link-fake text-sm woodsmoke-500 fw-semibold">
+                        View <i class="fa-solid fa-link"></i>
+                    </p>
+                </div>
+            </a>
+            <!-- Card-3 -->
+
+            <!-- Card-4 -->
+            <a
+                href="{{url_for('steps')}}"
+                class="wrapping-card col-lg-4 col-md-6"
+                data-aos="zoom-in"
+                data-aos-duration="600"
+            >
+                <!-- Image -->
+                <img
+                    src="{{url_for('static', filename='assets/project/3.jpg')}}"
+                    alt="Project-image"
+                    width="auto"
+                    height="60"
+                    loading="lazy"
+                    class="rounded-2 mb-16"
+                />
+
+                <!-- Paragraf -->
+                <div class="container-text">
+                    <h2 class="title-card fw-semibold woodsmoke-900 text-lg">
+                        Steps
+                    </h2>
+                    <p class="text-sm woodsmoke-500 fw-regular">
+                        Steps makes healthy living enjoyable with features like
+                        water intake, sleep tracking, and muscle mass
+                        monitoring.
+                    </p>
+                    <p class="link-fake text-sm woodsmoke-500 fw-semibold">
+                        View <i class="fa-solid fa-link"></i>
+                    </p>
+                </div>
+            </a>
+            <!-- Card-4 -->
+
+            <!-- Card-5 -->
+            <a
+                href="{{url_for('otto')}}"
+                class="wrapping-card col-lg-4 col-md-6"
+                data-aos="zoom-in"
+                data-aos-duration="700"
+            >
+                <!-- Image -->
+                <img
+                    src="{{url_for('static', filename='assets/project/4.png')}}"
+                    alt="Project-image"
+                    width="auto"
+                    height="60"
+                    loading="lazy"
+                    class="rounded-2 mb-16"
+                />
+
+                <!-- Paragraf -->
+                <div class="container-text">
+                    <h2 class="title-card fw-semibold woodsmoke-900 text-lg">
+                        Otto
+                    </h2>
+                    <p class="text-sm woodsmoke-500 fw-regular">
+                        Otto offers automotive procurement with a sleek design,
+                        ensuring users enjoy a more pleasant and efficient
+                        experience.
+                    </p>
+                    <p class="link-fake text-sm woodsmoke-500 fw-semibold">
+                        View <i class="fa-solid fa-link"></i>
+                    </p>
+                </div>
+            </a>
+            <!-- Card-5 -->
+
+            <!-- Card-6 -->
+            <a
+                href="{{url_for('buddaya')}}"
+                class="wrapping-card col-lg-4 col-md-6"
+                data-aos="zoom-in"
+                data-aos-duration="800"
+            >
+                <!-- Image -->
+                <img
+                    src="{{url_for('static', filename='assets/project/5.jpg')}}"
+                    alt="Project-image"
+                    width="auto"
+                    height="60"
+                    loading="lazy"
+                    class="rounded-2 mb-16"
+                />
+
+                <!-- Paragraf -->
+                <div class="container-text">
+                    <h2 class="title-card fw-semibold woodsmoke-900 text-lg">
+                        Buddaya
+                    </h2>
+                    <p class="text-sm woodsmoke-500 fw-regular">
+                        Buddaya facilitates Indonesian ethnography. The app
+                        inspires youth to engage in creative projects and
+                        cultural preservation.
+                    </p>
+                    <p class="link-fake text-sm woodsmoke-500 fw-semibold">
+                        View <i class="fa-solid fa-link"></i>
+                    </p>
+                </div>
+            </a>
+            <!-- Card-6 -->
+        </div>
+    </div>
+</section>
+<!-- Project -->
+
+<!-- Testimoni and contacts -->
+<section id="exp" class="experience pt-50 pb-50">
+    <div class="container-xxl container-fluid">
+        <div class="row">
+            <div class="col-lg-12 d-flex text-center justify-content-center">
+                <h2 class="woodsmoke-950 text-3xl fw-bold">
+                    Don't take our world for it <br />
+                    <span class="teal-400 text-3xl fw-bold">
+                        Trust our customer
+                    </span>
+                </h2>
+            </div>
+        </div>
+
+        <!-- Testimoni section -->
+        <div class="row mt-2">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 card-1-testimoni mt-3 mt-md-3">
+                <div class="wrapper-testimoni p-3">
+                    <!-- Profile -->
+                    <div
+                        class="profile d-flex align-items-center justify-content-between"
+                    >
+                        <div class="profile-left d-flex align-items-center">
+                            <!-- Picture -->
+                            <div class="profile-picture"></div>
+
+                            <div class="profile-title mt-3 ms-3">
+                                <h2
+                                    class="text-normal woodsmoke-950 fw-semibold"
+                                >
+                                    Rahma Dewi
+                                </h2>
+                                <p
+                                    class="text-sm woodsmoke-500 fw-regular"
+                                    style="margin-top: -4px"
+                                >
+                                    @dewirahma
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="profile-right">
+                            <i
+                                class="fa-brands fa-instagram text-4xl fw-medium woodsmoke-900"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <!-- Content Comment -->
+                    <div class="content-comment mt-2">
+                        <p class="text-sm woodsmoke-900 fw-medium">
+                            <span class="teal-400">@Helios </span>is a sleek and
+                            well-organized portfolio. It beautifully showcases
+                            skills and projects with ease
+                        </p>
+                    </div>
+
+                    <!-- Like and Comment -->
+                    <div
+                        class="information d-flex align-items-center justify-content-between"
+                        style="margin-top: -16px"
+                    >
+                        <!-- Left: Like and comment -->
+                        <div class="wrapper-like-comment d-flex">
+                            <!-- Like -->
+                            <div class="like d-flex align-items-center">
+                                <div class="icon-like">
+                                    <i
+                                        class="uil uil-heart-alt text-2xl woodsmoke-900"
+                                    ></i>
+                                </div>
+                                <div class="like-increment ms-1 mt-3">
+                                    <p class="text-sm fw-regular woodsmoke-500">
+                                        73
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Comment -->
+                            <div class="comment d-flex align-items-center ms-2">
+                                <div class="icon-like">
+                                    <i
+                                        class="uil uil-comment-dots woodsmoke-900 text-2xl"
+                                    ></i>
+                                </div>
+                                <div class="like-increment ms-1 mt-3">
+                                    <p class="text-sm fw-regular woodsmoke-500">
+                                        41
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right: Date time -->
+                        <div
+                            class="wrapper-datetime d-flex align-items-center mt-3"
+                        >
+                            <p class="text-sm woodsmoke-500 fw-regular pe-1">
+                                08:19 PM
+                            </p>
+                            <p class="text-sm woodsmoke-500 fw-regular">
+                                | 24 Sep 2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 card-2-testimoni mt-3 mt-md-3">
+                <div class="wrapper-testimoni p-3">
+                    <!-- Profile -->
+                    <div
+                        class="profile d-flex align-items-center justify-content-between"
+                    >
+                        <div class="profile-left d-flex align-items-center">
+                            <!-- Picture -->
+                            <div class="profile-picture-2"></div>
+
+                            <div class="profile-title mt-3 ms-3">
+                                <h2
+                                    class="text-normal woodsmoke-950 fw-semibold"
+                                >
+                                    Catheline Clain
+                                </h2>
+                                <p
+                                    class="text-sm woodsmoke-500 fw-regular"
+                                    style="margin-top: -4px"
+                                >
+                                    @cathy
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="profile-right">
+                            <i
+                                class="fa-brands fa-x-twitter text-4xl fw-medium woodsmoke-900"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <!-- Content Comment -->
+                    <div class="content-comment mt-2">
+                        <p class="text-sm woodsmoke-900 fw-medium">
+                            good work and clean
+                        </p>
+                    </div>
+
+                    <!-- Like and Comment -->
+                    <div
+                        class="information d-flex align-items-center justify-content-between"
+                        style="margin-top: -16px"
+                    >
+                        <!-- Left: Like and comment -->
+                        <div class="wrapper-like-comment d-flex">
+                            <!-- Like -->
+                            <div class="like d-flex align-items-center">
+                                <div class="icon-like">
+                                    <i
+                                        class="uil uil-heart-alt text-2xl woodsmoke-900"
+                                    ></i>
+                                </div>
+                                <div class="like-increment ms-1 mt-3">
+                                    <p class="text-sm fw-regular woodsmoke-500">
+                                        69
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Comment -->
+                            <div class="comment d-flex align-items-center ms-2">
+                                <div class="icon-like">
+                                    <i
+                                        class="uil uil-comment-dots woodsmoke-900 text-2xl"
+                                    ></i>
+                                </div>
+                                <div class="like-increment ms-1 mt-3">
+                                    <p class="text-sm fw-regular woodsmoke-500">
+                                        48
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right: Date time -->
+                        <div
+                            class="wrapper-datetime d-flex align-items-center mt-3"
+                        >
+                            <p class="text-sm woodsmoke-500 fw-regular pe-1">
+                                10:22 AM
+                            </p>
+                            <p class="text-sm woodsmoke-500 fw-regular">
+                                | 26 Sep 2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 card-3-testimoni mt-3 mt-md-3">
+                <div class="wrapper-testimoni p-3">
+                    <!-- Profile -->
+                    <div
+                        class="profile d-flex align-items-center justify-content-between"
+                    >
+                        <div class="profile-left d-flex align-items-center">
+                            <!-- Picture -->
+                            <div class="profile-picture-3"></div>
+
+                            <div class="profile-title mt-3 ms-3">
+                                <h2
+                                    class="text-normal woodsmoke-950 fw-semibold"
+                                >
+                                    Stevans Naedaro
+                                </h2>
+                                <p
+                                    class="text-sm woodsmoke-500 fw-regular"
+                                    style="margin-top: -4px"
+                                >
+                                    @itssteeeve
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="profile-right">
+                            <i
+                                class="fa-brands fa-x-twitter text-4xl fw-medium woodsmoke-900"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <!-- Content Comment -->
+                    <div class="content-comment mt-2">
+                        <p class="text-sm woodsmoke-900 fw-medium">
+                            An excellent showcase of talent! The website is
+                            beautifully designed and user-friendly. The
+                            attention to detail in the presentation of projects
+                            makes it clear how skilled and professional the
+                            creator is.
+                        </p>
+                    </div>
+
+                    <!-- Like and Comment -->
+                    <div
+                        class="information d-flex align-items-center justify-content-between"
+                        style="margin-top: -16px"
+                    >
+                        <!-- Left: Like and comment -->
+                        <div class="wrapper-like-comment d-flex">
+                            <!-- Like -->
+                            <div class="like d-flex align-items-center">
+                                <div class="icon-like">
+                                    <i
+                                        class="uil uil-heart-alt text-2xl woodsmoke-900"
+                                    ></i>
+                                </div>
+                                <div class="like-increment ms-1 mt-3">
+                                    <p class="text-sm fw-regular woodsmoke-500">
+                                        48
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Comment -->
+                            <div class="comment d-flex align-items-center ms-2">
+                                <div class="icon-like">
+                                    <i
+                                        class="uil uil-comment-dots woodsmoke-900 text-2xl"
+                                    ></i>
+                                </div>
+                                <div class="like-increment ms-1 mt-3">
+                                    <p class="text-sm fw-regular woodsmoke-500">
+                                        32
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right: Date time -->
+                        <div
+                            class="wrapper-datetime d-flex align-items-center mt-3"
+                        >
+                            <p class="text-sm woodsmoke-500 fw-regular pe-1">
+                                09:11 AM
+                            </p>
+                            <p class="text-sm woodsmoke-500 fw-regular">
+                                | 31 Sep 2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4-->
+            <div class="col-lg-4 col-md-6 card-4-testimoni">
+                <div class="wrapper-testimoni p-3">
+                    <!-- Profile -->
+                    <div
+                        class="profile d-flex align-items-center justify-content-between"
+                    >
+                        <div class="profile-left d-flex align-items-center">
+                            <!-- Picture -->
+                            <div class="profile-picture-4"></div>
+
+                            <div class="profile-title mt-3 ms-3">
+                                <h2
+                                    class="text-normal woodsmoke-950 fw-semibold"
+                                >
+                                    Emily Jonson
+                                </h2>
+                                <p
+                                    class="text-sm woodsmoke-500 fw-regular"
+                                    style="margin-top: -4px"
+                                >
+                                    @emilyyy
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="profile-right">
+                            <i
+                                class="fa-brands fa-discord text-4xl fw-medium woodsmoke-900"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <!-- Content Comment -->
+                    <div class="content-comment mt-2">
+                        <p class="text-sm woodsmoke-900 fw-medium">
+                            <span class="teal-400"> @Helios </span>is an
+                            exceptional portfolio website! It’s clean,
+                            professional, and highlights the creator’s talents
+                            perfectly. The navigation is seamless, making it
+                            easy to explore the projects showcased.
+                        </p>
+                    </div>
+
+                    <!-- Like and Comment -->
+                    <div
+                        class="information d-flex align-items-center justify-content-between"
+                        style="margin-top: -16px"
+                    >
+                        <!-- Left: Like and comment -->
+                        <div class="wrapper-like-comment d-flex">
+                            <!-- Like -->
+                            <div class="like d-flex align-items-center">
+                                <div class="icon-like">
+                                    <i
+                                        class="uil uil-heart-alt text-2xl woodsmoke-900"
+                                    ></i>
+                                </div>
+                                <div class="like-increment ms-1 mt-3">
+                                    <p class="text-sm fw-regular woodsmoke-500">
+                                        87
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Comment -->
+                            <div class="comment d-flex align-items-center ms-2">
+                                <div class="icon-like">
+                                    <i
+                                        class="uil uil-comment-dots woodsmoke-900 text-2xl"
+                                    ></i>
+                                </div>
+                                <div class="like-increment ms-1 mt-3">
+                                    <p class="text-sm fw-regular woodsmoke-500">
+                                        67
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right: Date time -->
+                        <div
+                            class="wrapper-datetime d-flex align-items-center mt-3"
+                        >
+                            <p class="text-sm woodsmoke-500 fw-regular pe-1">
+                                09:19 AM
+                            </p>
+                            <p class="text-sm woodsmoke-500 fw-regular">
+                                | 05 Oct 2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5-->
+            <div class="col-lg-4 col-md-6 card-5-testimoni">
+                <div class="wrapper-testimoni p-3">
+                    <!-- Profile -->
+                    <div
+                        class="profile d-flex align-items-center justify-content-between"
+                    >
+                        <div class="profile-left d-flex align-items-center">
+                            <!-- Picture -->
+                            <div class="profile-picture-5"></div>
+
+                            <div class="profile-title mt-3 ms-3">
+                                <h2
+                                    class="text-normal woodsmoke-950 fw-semibold"
+                                >
+                                    Billie
+                                </h2>
+                                <p
+                                    class="text-sm woodsmoke-500 fw-regular"
+                                    style="margin-top: -4px"
+                                >
+                                    @bill_bill_bill
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="profile-right">
+                            <i
+                                class="fa-brands fa-github text-4xl fw-medium woodsmoke-900"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <!-- Content Comment -->
+                    <div class="content-comment mt-2">
+                        <p class="text-sm woodsmoke-900 fw-medium">
+                            <span class="teal-400">@Helios </span>offers a
+                            stunning user experience! It’s beautifully designed
+                            and highly functional. The portfolio reflects
+                            professionalism and creativity, making it a pleasure
+                            to explore
+                        </p>
+                    </div>
+
+                    <!-- Like and Comment -->
+                    <div
+                        class="information d-flex align-items-center justify-content-between"
+                        style="margin-top: -16px"
+                    >
+                        <!-- Left: Like and comment -->
+                        <div class="wrapper-like-comment d-flex">
+                            <!-- Like -->
+                            <div class="like d-flex align-items-center">
+                                <div class="icon-like">
+                                    <i
+                                        class="uil uil-heart-alt text-2xl woodsmoke-900"
+                                    ></i>
+                                </div>
+                                <div class="like-increment ms-1 mt-3">
+                                    <p class="text-sm fw-regular woodsmoke-500">
+                                        66
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Comment -->
+                            <div class="comment d-flex align-items-center ms-2">
+                                <div class="icon-like">
+                                    <i
+                                        class="uil uil-comment-dots woodsmoke-900 text-2xl"
+                                    ></i>
+                                </div>
+                                <div class="like-increment ms-1 mt-3">
+                                    <p class="text-sm fw-regular woodsmoke-500">
+                                        46
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right: Date time -->
+                        <div
+                            class="wrapper-datetime d-flex align-items-center mt-3"
+                        >
+                            <p class="text-sm woodsmoke-500 fw-regular pe-1">
+                                08:09 AM
+                            </p>
+                            <p class="text-sm woodsmoke-500 fw-regular">
+                                | 12 Oct 2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6-->
+            <div class="col-lg-4 col-md-6 card-6-testimoni">
+                <div class="wrapper-testimoni p-3">
+                    <!-- Profile -->
+                    <div
+                        class="profile d-flex align-items-center justify-content-between"
+                    >
+                        <div class="profile-left d-flex align-items-center">
+                            <!-- Picture -->
+                            <div class="profile-picture-6"></div>
+
+                            <div class="profile-title mt-3 ms-3">
+                                <h2
+                                    class="text-normal woodsmoke-950 fw-semibold"
+                                >
+                                    Martin Clever
+                                </h2>
+                                <p
+                                    class="text-sm woodsmoke-500 fw-regular"
+                                    style="margin-top: -4px"
+                                >
+                                    @Marrr
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="profile-right">
+                            <i
+                                class="fa-brands fa-facebook text-4xl fw-medium woodsmoke-900"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <!-- Content Comment -->
+                    <div class="content-comment mt-2">
+                        <p class="text-sm woodsmoke-900 fw-medium">
+                            Great Job Dude🙌
+                        </p>
+                    </div>
+
+                    <!-- Like and Comment -->
+                    <div
+                        class="information d-flex align-items-center justify-content-between"
+                        style="margin-top: -16px"
+                    >
+                        <!-- Left: Like and comment -->
+                        <div class="wrapper-like-comment d-flex">
+                            <!-- Like -->
+                            <div class="like d-flex align-items-center">
+                                <div class="icon-like">
+                                    <i
+                                        class="uil uil-heart-alt text-2xl woodsmoke-900"
+                                    ></i>
+                                </div>
+                                <div class="like-increment ms-1 mt-3">
+                                    <p class="text-sm fw-regular woodsmoke-500">
+                                        88
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Comment -->
+                            <div class="comment d-flex align-items-center ms-2">
+                                <div class="icon-like">
+                                    <i
+                                        class="uil uil-comment-dots woodsmoke-900 text-2xl"
+                                    ></i>
+                                </div>
+                                <div class="like-increment ms-1 mt-3">
+                                    <p class="text-sm fw-regular woodsmoke-500">
+                                        55
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right: Date time -->
+                        <div
+                            class="wrapper-datetime d-flex align-items-center mt-3"
+                        >
+                            <p class="text-sm woodsmoke-500 fw-regular pe-1">
+                                12:01 PM
+                            </p>
+                            <p class="text-sm woodsmoke-500 fw-regular">
+                                | 28 Oct 2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="row mt-4 d-flex justify-content-lg-center justify-content-md-center"
+        >
+            <div class="col-lg-2">
+                <button
+                    type="button"
+                    class="py-2 px-4 text-white fw-semibold text-md bg-teal-400 button-comment"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo"
+                >
+                    Post Comment
+                </button>
+
+                <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1
+                                    class="modal-title fs-5 woodsmoke-900"
+                                    id="exampleModalLabel"
+                                >
+                                    New Comment
+                                </h1>
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                ></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <!-- Name -->
+                                    <div class="mb-3">
+                                        <label
+                                            for="recipient-name"
+                                            class="col-form-label"
+                                            >Name:</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="recipient-name"
+                                        />
+                                    </div>
+                                    <!-- Username -->
+                                    <div class="mb-3">
+                                        <label
+                                            for="message-text"
+                                            class="col-form-label"
+                                            >Username:</label
+                                        >
+                                        <input
+                                            class="form-control"
+                                            id="message-text"
+                                        />
+                                    </div>
+                                    <!-- Pickup you Social Media -->
+                                    <div class="mb-3">
+                                        <label
+                                            for="message-text"
+                                            class="col-form-label"
+                                            >Social Media:</label
+                                        >
+                                        <input
+                                            class="form-control"
+                                            id="message-text"
+                                        />
+                                    </div>
+                                    <!-- Pickup you Social Media -->
+                                    <div class="mb-3">
+                                        <label
+                                            for="message-text"
+                                            class="col-form-label"
+                                            >Your Comment:</label
+                                        >
+                                        <textarea
+                                            class="form-control"
+                                            id="message-text"
+                                        ></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-danger"
+                                    data-bs-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                                <button
+                                    type="button"
+                                    class="py-2 px-4 bg-teal-400 text-white fw-semibold"
+                                    style="border: none; border-radius: 8px"
+                                >
+                                    Comment
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimoni and contacts -->
+
+{%endblock%}
+<!-- Script -->
+{%block script%}
+<script src="{{url_for('static', filename='frontend/js/script.js')}}"></script>
+{%endblock%}
