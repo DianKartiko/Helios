@@ -43,7 +43,6 @@ Now, create and activate your virtual environment:
 ```
 <your_python_directory>
 source venv/bin/activate
-
 ```
 
 -   On Windows
