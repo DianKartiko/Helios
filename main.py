@@ -39,6 +39,10 @@ def otto():
 def buddaya():
     return render_template('src/project/buddaya.html')
 
+@app.route('/python-articles/')
+def articles():
+    return render_template('src/update.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
 

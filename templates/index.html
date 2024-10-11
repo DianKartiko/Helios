@@ -9,9 +9,7 @@
 <section class="mt-20 mb-64">
     <nav class="navbar navbar-expand-lg fixed-top background">
         <div class="container-fluid container-xxl">
-            <a
-                class="navbar-brand fw-semibold woodsmoke-950 text-2xl"
-                href="#home"
+            <a class="navbar-brand fw-semibold zinc-50 text-2xl" href="#home"
                 >Helios</a
             >
             <button
@@ -26,16 +24,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div
-                    class="navbar-nav woodsmoke-900 fw-medium ms-auto text-sm fw-regular"
-                >
-                    <a class="nav-link" href="#about">About</a>
-                    <a class="nav-link" href="#resume">Resume</a>
-                    <a class="nav-link" href="{{url_for('update')}}"
-                        >Articles</a
-                    >
-                    <a class="nav-link" href="#project">Project</a>
-                    <a class="nav-link" href="#exp">Contacts</a>
+                <div class="navbar-nav fw-medium ms-auto text-sm fw-regular">
+                    <a class="nav-link zinc-100" href="#about">About</a>
+                    <a class="nav-link zinc-100" href="#resume">Resume</a>
+                    <a class="nav-link zinc-100" href="#articles">Articles</a>
+                    <a class="nav-link zinc-100" href="#project">Project</a>
+                    <a class="nav-link zinc-100" href="#exp">Contacts</a>
                 </div>
                 <!-- <div
                     class="toggle-button d-flex justify-content-end align-items-center"
@@ -54,14 +48,18 @@
 <section id="home" class="header pt-lg-60 pb-50">
     <div class="container-xxl container-fluid">
         <div class="row gap-lg-0 gap-5">
-            <div class="col-lg-6 col-12 my-auto">
-                <p class="text-support text-lg teal-400 fw-medium">
-                    Dian Wicaksono,
-                </p>
-                <h1 class="header-title woodsmoke-950 fw-bold text-4xl">
-                    I am a Designer and Junior Front-end Developer.
+            <div class="col-lg-8 col-12 my-auto">
+                <div class="d-flex align-items-center">
+                    <div class="photo-profile mb-3"></div>
+                    <p class="ms-2 text-support text-xl teal-400 fw-semibold">
+                        Dian Wicaksono
+                    </p>
+                </div>
+                <h1 class="header-title zinc-50 fw-bold text-5xl">
+                    Designer, Frontend Developer and Internet of Things
+                    Enthusiast
                 </h1>
-                <p class="mt-32 text-sm woodsmoke-500 fw-regular">
+                <p class="mt-32 text-normal zinc-500 fw-regular">
                     A creative designer and junior programmer dedicated to
                     developing innovative solutions for products and businesses,
                     ensuring appealing and functional outcomes. Passionate about
@@ -70,49 +68,29 @@
                 <div class="d-flex gap-4 mt-12 mb-24 icon">
                     <a
                         href="https://github.com/DianKartiko"
-                        class="text-3xl woodsmoke-500"
+                        class="text-3xl zinc-500"
                         target="_blank"
                         ><i class="uil uil-github"></i
                     ></a>
                     <a
                         href="https://x.com/BaseleusNara?t=sWKqvIRNvp-E9aKY7dRxew&s=09"
-                        class="text-3xl woodsmoke-500"
+                        class="text-3xl zinc-500"
                         target="_blank"
                         ><i class="fa-brands fa-x-twitter"></i
                     ></a>
                     <a
                         href="https://www.instagram.com/helios.ui?igsh=OW1sZmszc2hycW90"
-                        class="text-3xl woodsmoke-500"
+                        class="text-3xl zinc-500"
                         target="_blank"
                         ><i class="uil uil-instagram"></i
                     ></a>
                     <a
                         href="https://www.linkedin.com/in/dian-wicaksono-b729a6272/"
-                        class="text-3xl woodsmoke-500"
+                        class="text-3xl zinc-500"
                         target="_blank"
                         ><i class="uil uil-linkedin"></i
                     ></a>
                 </div>
-
-                <div class="button mt-32">
-                    <a
-                        href="../static/assets/documents/Dian-Kartiko-Wicaksono-Resume.pdf"
-                        class="btn-link-cv"
-                        target="_blank"
-                        >Download CV</a
-                    >
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-12 my-auto hero-image">
-                <img
-                    src="{{url_for('static', filename='assets/kit/Hero.png')}}"
-                    alt="Hero-Image"
-                    width="600"
-                    height="auto"
-                    loading="lazy"
-                    data-aos="zoom-in"
-                />
             </div>
         </div>
     </div>
@@ -133,7 +111,7 @@
                         width="48"
                         alt=""
                     />
-                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">HTML5</p>
+                    <p class="text-lg pt-3 fw-semibold zinc-500">HTML5</p>
                 </div>
                 <div class="slide d-flex align-items-center gap-3">
                     <img
@@ -142,7 +120,7 @@
                         width="48"
                         alt=""
                     />
-                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">CSS3</p>
+                    <p class="text-lg pt-3 fw-semibold zinc-500">CSS3</p>
                 </div>
                 <div class="slide d-flex align-items-center gap-3">
                     <img
@@ -151,9 +129,7 @@
                         width="48"
                         alt=""
                     />
-                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">
-                        JavaScript
-                    </p>
+                    <p class="text-lg pt-3 fw-semibold zinc-500">JavaScript</p>
                 </div>
                 <div class="slide d-flex align-items-center gap-3">
                     <img
@@ -162,9 +138,7 @@
                         width="48"
                         alt=""
                     />
-                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">
-                        Bootstrap
-                    </p>
+                    <p class="text-lg pt-3 fw-semibold zinc-500">Bootstrap</p>
                 </div>
                 <div class="slide d-flex align-items-center gap-3">
                     <img
@@ -173,9 +147,7 @@
                         width="48"
                         alt=""
                     />
-                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">
-                        TailwindCSS
-                    </p>
+                    <p class="text-lg pt-3 fw-semibold zinc-500">TailwindCSS</p>
                 </div>
                 <div class="slide d-flex align-items-center gap-3">
                     <img
@@ -184,7 +156,7 @@
                         width="48"
                         alt=""
                     />
-                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">Python</p>
+                    <p class="text-lg pt-3 fw-semibold zinc-500">Python</p>
                 </div>
                 <div class="slide d-flex align-items-center gap-3">
                     <img
@@ -193,9 +165,7 @@
                         width="48"
                         alt=""
                     />
-                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">
-                        Arduino
-                    </p>
+                    <p class="text-lg pt-3 fw-semibold zinc-500">Arduino</p>
                 </div>
 
                 <div class="slide d-flex align-items-center gap-3">
@@ -205,7 +175,7 @@
                         width="48"
                         alt=""
                     />
-                    <p class="text-lg pt-3 fw-semibold woodsmoke-500">Figma</p>
+                    <p class="text-lg pt-3 fw-semibold zinc-500">Figma</p>
                 </div>
             </div>
         </div>
@@ -220,14 +190,14 @@
             <!-- About grid -->
             <div class="col-lg-6">
                 <!-- Heading -->
-                <h2 class="text-2xl fw-bold teal-400 text-start mb-32">
+                <h2 class="text-normal fw-semibold zinc-100 text-start mb-32">
                     <i
-                        class="uil uil-user-circle text-3xl teal-400 me-2 text-start"
+                        class="uil uil-user-circle text-2xl zinc-500 me-2 text-start"
                     ></i
                     >About Me
                 </h2>
                 <!-- Heading -->
-                <p class="about-text text-normal fw-regular woodsmoke-500">
+                <p class="about-text text-normal fw-regular zinc-500">
                     I am a professional freelancer specializing in technology,
                     focusing on UI/UX Design and Front-End Development. With a
                     high learning spirit, creativity, and a passion for
@@ -245,8 +215,8 @@
             <!-- What i do -->
             <div class="col-lg-6 what">
                 <!-- Heading -->
-                <h4 class="text-2xl fw-bold text-start mb-24 teal-400">
-                    <i class="uil uil-edit-alt text-3xl teal-400 me-2"></i
+                <h4 class="text-normal fw-semibold text-start mb-24 zinc-100">
+                    <i class="uil uil-edit-alt text-2xl zinc-500 me-2"></i
                     >Services
                 </h4>
                 <!-- Heading -->
@@ -265,10 +235,10 @@
                         />
                     </div>
                     <div>
-                        <h4 class="text-lg fw-semibold woodsmoke-900">
+                        <h4 class="text-lg fw-semibold zinc-100">
                             UI/UX Design
                         </h4>
-                        <p class="text-sm fw-regular woodsmoke-500">
+                        <p class="text-sm fw-regular zinc-500">
                             Skilled in design, wireframing, and prototyping
                             using tools like Figma, delivering intuitive and
                             engaging user experiences.
@@ -290,10 +260,8 @@
                         />
                     </div>
                     <div>
-                        <h4 class="text-lg fw-semibold woodsmoke-900">
-                            Web Design
-                        </h4>
-                        <p class="text-sm fw-regular woodsmoke-500">
+                        <h4 class="text-lg fw-semibold zinc-100">Web Design</h4>
+                        <p class="text-sm fw-regular zinc-500">
                             Skilled in slicing designs from Figma using HTML,
                             CSS3, JavaScript, and other technologies to create
                             responsive web interfaces.
@@ -315,10 +283,10 @@
                         />
                     </div>
                     <div>
-                        <h4 class="text-lg fw-semibold woodsmoke-900">
+                        <h4 class="text-lg fw-semibold zinc-100">
                             Programming
                         </h4>
-                        <p class="text-sm fw-regular woodsmoke-500">
+                        <p class="text-sm fw-regular zinc-500">
                             Knowledgeable in fundamental programming concepts
                             using various languages such as Python, C, and
                             JavaScript.
@@ -334,12 +302,12 @@
 <!-- Resume -->
 <section id="resume" class="resume pt-50 pb-50">
     <div class="container-xxl container-fluid">
-        <div class="row gap-lg">
-            <div class="col-lg-6">
+        <div class="row gap-lg d-flex">
+            <div class="col-lg-8">
                 <!-- Heading -->
-                <h2 class="text-2xl fw-bold teal-400 text-start mb-32">
+                <h2 class="text-normal fw-semibold zinc-100 text-start mb-32">
                     <i
-                        class="uil uil-graduation-cap text-3xl teal-400 text-start me-2"
+                        class="uil uil-graduation-cap text-3xl zinc-500 text-start me-2"
                     ></i
                     >Education
                 </h2>
@@ -347,17 +315,13 @@
                 <!-- Binus -->
                 <div class="mb-24">
                     <!-- Binus -->
-                    <p
-                        class="date py-8 text-sm woodsmoke-500 fw-500 text-start"
-                    >
+                    <p class="date py-8 text-sm zinc-500 fw-500 text-start">
                         <span class="ms-2">2022 - Present</span>
                     </p>
-                    <h2
-                        class="text-lg fw-semibold woodsmoke-900 text-start mb-8"
-                    >
+                    <h2 class="text-lg fw-semibold zinc-100 text-start mb-8">
                         Bina Nusantara University
                     </h2>
-                    <p class="text-sm fw-regular woodsmoke-500">
+                    <p class="text-sm fw-regular zinc-500">
                         As a Computer Science student at Bina Nusantara, one of
                         the top accredited universities in Indonesia, I receive
                         comprehensive support both academically and
@@ -370,17 +334,13 @@
                 <!-- BWA -->
                 <div>
                     <!-- Binus -->
-                    <p
-                        class="date py-8 text-sm woodsmoke-500 fw-500 text-start"
-                    >
+                    <p class="date py-8 text-sm zinc-500 fw-500 text-start">
                         <span class="ms-2">2021 - Present</span>
                     </p>
-                    <h2
-                        class="text-lg fw-semibold woodsmoke-900 text-start mb-8"
-                    >
+                    <h2 class="text-lg fw-semibold zinc-100 text-start mb-8">
                         Build With Angga Online Course
                     </h2>
-                    <p class="text-sm fw-regular woodsmoke-500">
+                    <p class="text-sm fw-regular zinc-500">
                         I have taken online courses on the Build With Angga
                         platform for UI/UX Design and Web Development. Through
                         these courses, I earned several certifications and
@@ -393,58 +353,90 @@
             </div>
 
             <!-- Experience -->
-            <div class="col-lg-6">
-                <h2 class="text-2xl fw-bold mb-24 text-start teal-400">
-                    <i class="uil uil-bag text-2xl teal-400 text-start me-2"></i
-                    >Experience
-                </h2>
+            <div class="col-lg-4 experience h-75">
+                <div class="wrapper-exp p-4">
+                    <h2
+                        class="text-normal fw-semibold mb-24 text-start zinc-100"
+                    >
+                        <i
+                            class="uil uil-bag text-2xl zinc-500 text-start me-2"
+                        ></i
+                        >Experience
+                    </h2>
 
-                <!-- Zona -->
-                <a
-                    href="https://zonamediagroup.id/"
-                    class="zona-media"
-                    target="_blank"
-                >
-                    <div class="content-zona">
-                        <div class="align-items-start">
-                            <h4 class="text-lg fw-semibold woodsmoke-900">
-                                Zona Media Group
-                            </h4>
-                            <p class="text-sm fw-regular woodsmoke-500">
-                                Internship Front-end Developer<br />
-                                June - September 2024
-                            </p>
-                            <p class="text-sm fw-regular woodsmoke-500">
-                                As a website developer intern at Zona Media
-                                Group, I successfully crafted a comprehensive
-                                company profile and a user-friendly website for
-                                their subsidiary, Class Program.
-                            </p>
+                    <!-- Work 1 -->
+                    <div class="wrapper-exp-object">
+                        <div class="exp-1 d-flex align-items-center">
+                            <!-- Image -->
+                            <div
+                                class="background-rounded d-flex align-items-center justify-content-center"
+                            >
+                                <div class="profile-company-1"></div>
+                            </div>
+
+                            <!-- Content text -->
+                            <div class="text-exp ms-2 mt-3 w-100">
+                                <h2
+                                    class="fw-semibold text-sm fw-semibold zinc-100"
+                                >
+                                    Zona Media Indonesia
+                                </h2>
+
+                                <div
+                                    class="d-flex text-xs justify-content-between"
+                                >
+                                    <p class="zinc-500 fw-medium">
+                                        Frontend Developer
+                                    </p>
+                                    <p class="zinc-500 fw-regular">
+                                        June - September
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </a>
 
-                <a href="#home" class="helios">
-                    <!-- Freelance -->
-                    <div class="content-helios">
-                        <div class="align-items-center">
-                            <h4 class="text-lg fw-semibold woodsmoke-900">
-                                Helios.ui
-                            </h4>
-                            <p class="text-sm fw-regular woodsmoke-500">
-                                UI/UX Designer | Front-end Developer <br />
-                                2023 - Present
-                            </p>
-                            <p class="text-sm fw-regular woodsmoke-500">
-                                As a freelance UI/UX designer and front-end
-                                developer at Helios.ui, I craft visually
-                                stunning and highly functional digital
-                                experiences. My expertise lies in Figma to
-                                create user-centric interfaces.
-                            </p>
+                    <!-- Work 2 -->
+                    <div class="wrapper-exp-object">
+                        <div class="exp-1 d-flex align-items-center">
+                            <!-- Image -->
+                            <div
+                                class="background-rounded d-flex align-items-center justify-content-center"
+                            >
+                                <div class="profile-company-2"></div>
+                            </div>
+
+                            <!-- Content text -->
+                            <div class="text-exp ms-2 mt-3 w-100">
+                                <h2
+                                    class="fw-semibold text-sm fw-semibold zinc-100"
+                                >
+                                    Helios
+                                </h2>
+
+                                <div
+                                    class="d-flex text-xs justify-content-between"
+                                >
+                                    <p class="zinc-500 fw-medium">
+                                        UI Designer
+                                    </p>
+                                    <p class="zinc-500 fw-regular ms-4">
+                                        2023 - Present
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </a>
+
+                    <a
+                        href="{{url_for('static', filename='assets/documents/Dian-Kartiko-Wicaksono-ENG.pdf')}}"
+                        class="text-sm fw-medium zinc-300 text-center w-100 py-2 px-3 d-flex justify-content-center mt-4 button-cv"
+                        style="text-decoration: none"
+                        target="_blank"
+                        >Download CV
+                        <i class="ms-2 mt-1 text-xxs fa-solid fa-arrow-down"></i
+                    ></a>
+                </div>
             </div>
             <!-- Experience -->
         </div>
@@ -452,24 +444,64 @@
 </section>
 <!-- Resume -->
 
+<!-- Articles -->
+<div class="articles pt-50 pb-50" id="articles">
+    <div class="container-xxl container-fluid">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="zinc-100 text-4xl text-start">
+                    Articles Highlighting <br />
+                    My Passion for Coding and User Experience
+                </h2>
+                <p class="zinc-500 fw-regular text-md">
+                    Discover my latest articles covering web development, design
+                    strategies, and innovative tech solutions. Dive into
+                    insights, tutorials, and reflections aimed at enhancing
+                    creativity and technical expertise in the digital landscape.
+                </p>
+            </div>
+
+            <!-- Bawah -->
+            <div class="wrapper-articles mt-4" style="margin-left: 12px">
+                <div class="article-1 d-flex align-items-center">
+                    <div class="col-lg-2 px-1">
+                        <h2 class="text-sm zinc-500 fw-regular">
+                            October 8, 2024
+                        </h2>
+                    </div>
+
+                    <a href="{{url_for('articles')}}" class="col-lg-6">
+                        <h2 class="zinc-100 fw-semibold text-normal">
+                            Deploying Python Projects on GitHub
+                        </h2>
+                        <p class="text-sm zinc-500 fw-regular">
+                            Learn the essential steps to deploy your Python
+                            project to GitHub, from setting up a repository to
+                            pushing your code. Perfect for developers looking to
+                            streamline their version control and collaboration.
+                        </p>
+                        <p class="teal-400 text-sm fw-medium">Read Article ></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Articles -->
+
 <!-- Project -->
 <section id="project" class="project pt-50 pb-50">
     <div class="container-xxl container-fluid">
         <div class="row gap-lg mb-24">
             <div class="col-lg-6">
-                <h1 class="text-2xl fw-bold mb-16 text-start teal-400">
+                <h1 class="text-xl fw-semibold mb-16 text-start zinc-100">
                     <i
-                        class="uil uil-scenery text-2xl teal-400 text-start me-2"
+                        class="uil uil-scenery text-2xl zinc-500 text-start me-2"
                     ></i
                     >Gallery
                 </h1>
-                <h2
-                    class="text-2xl fw-semibold woodsmoke-900 text-start mb-8 text-start heading-project"
-                >
-                    Check out my portfolio of design and website creations.
-                </h2>
                 <p
-                    class="text-sm fw-regular woodsmoke-500 text-start text-project-heading"
+                    class="text-sm fw-regular zinc-500 text-start text-project-heading"
                 >
                     Enjoy my gallery. Find inspiration through the designs and
                     projects I've created. I hope you appreciate each piece.
@@ -498,16 +530,16 @@
 
                 <!-- Paragraf -->
                 <div class="container-text">
-                    <h2 class="title-card fw-semibold woodsmoke-900 text-lg">
+                    <h2 class="title-card fw-semibold zinc-100 text-lg">
                         Exotic
                     </h2>
-                    <p class="text-sm woodsmoke-500 fw-regular">
+                    <p class="text-sm zinc-500 fw-regular">
                         Exotic: Platform designed to showcase stunning artworks,
                         providing a space for artists to display their
                         creativity.
                     </p>
-                    <p class="link-fake text-sm woodsmoke-500 fw-semibold">
-                        View <i class="fa-solid fa-link"></i>
+                    <p class="link-fake text-sm zinc-500 fw-semibold">
+                        View <i class="uil uil-arrow-right"></i>
                     </p>
                 </div>
             </a>
@@ -532,15 +564,15 @@
 
                 <!-- Paragraf -->
                 <div class="container-text">
-                    <h2 class="title-card fw-semibold woodsmoke-900 text-lg">
+                    <h2 class="title-card fw-semibold zinc-100 text-lg">
                         Linear
                     </h2>
-                    <p class="text-sm woodsmoke-500 fw-regular">
+                    <p class="text-sm zinc-500 fw-regular">
                         Fresh mathematical LMS for mobile apps, providing
                         interactive and effective learning anytime, anywhere.
                     </p>
-                    <p class="link-fake text-sm woodsmoke-500 fw-semibold">
-                        View <i class="fa-solid fa-link"></i>
+                    <p class="link-fake text-sm zinc-500 fw-semibold">
+                        View <i class="uil uil-arrow-right"></i>
                     </p>
                 </div>
             </a>
@@ -565,16 +597,16 @@
 
                 <!-- Paragraf -->
                 <div class="container-text">
-                    <h2 class="title-card fw-semibold woodsmoke-900 text-lg">
+                    <h2 class="title-card fw-semibold zinc-100 text-lg">
                         Nest
                     </h2>
-                    <p class="text-sm woodsmoke-500 fw-regular">
+                    <p class="text-sm zinc-500 fw-regular">
                         Enjoy music with a fresh and simple design in Nest,
                         creating a comfortable and enjoyable listening
                         experience.
                     </p>
-                    <p class="link-fake text-sm woodsmoke-500 fw-semibold">
-                        View <i class="fa-solid fa-link"></i>
+                    <p class="link-fake text-sm zinc-500 fw-semibold">
+                        View <i class="uil uil-arrow-right"></i>
                     </p>
                 </div>
             </a>
@@ -599,16 +631,16 @@
 
                 <!-- Paragraf -->
                 <div class="container-text">
-                    <h2 class="title-card fw-semibold woodsmoke-900 text-lg">
+                    <h2 class="title-card fw-semibold zinc-100 text-lg">
                         Steps
                     </h2>
-                    <p class="text-sm woodsmoke-500 fw-regular">
+                    <p class="text-sm zinc-500 fw-regular">
                         Steps makes healthy living enjoyable with features like
                         water intake, sleep tracking, and muscle mass
                         monitoring.
                     </p>
-                    <p class="link-fake text-sm woodsmoke-500 fw-semibold">
-                        View <i class="fa-solid fa-link"></i>
+                    <p class="link-fake text-sm zinc-500 fw-semibold">
+                        View <i class="uil uil-arrow-right"></i>
                     </p>
                 </div>
             </a>
@@ -633,16 +665,16 @@
 
                 <!-- Paragraf -->
                 <div class="container-text">
-                    <h2 class="title-card fw-semibold woodsmoke-900 text-lg">
+                    <h2 class="title-card fw-semibold zinc-100 text-lg">
                         Otto
                     </h2>
-                    <p class="text-sm woodsmoke-500 fw-regular">
+                    <p class="text-sm zinc-500 fw-regular">
                         Otto offers automotive procurement with a sleek design,
                         ensuring users enjoy a more pleasant and efficient
                         experience.
                     </p>
-                    <p class="link-fake text-sm woodsmoke-500 fw-semibold">
-                        View <i class="fa-solid fa-link"></i>
+                    <p class="link-fake text-sm zinc-500 fw-semibold">
+                        View <i class="uil uil-arrow-right"></i>
                     </p>
                 </div>
             </a>
@@ -667,16 +699,16 @@
 
                 <!-- Paragraf -->
                 <div class="container-text">
-                    <h2 class="title-card fw-semibold woodsmoke-900 text-lg">
+                    <h2 class="title-card fw-semibold zinc-100 text-lg">
                         Buddaya
                     </h2>
-                    <p class="text-sm woodsmoke-500 fw-regular">
+                    <p class="text-sm zinc-500 fw-regular">
                         Buddaya facilitates Indonesian ethnography. The app
                         inspires youth to engage in creative projects and
                         cultural preservation.
                     </p>
-                    <p class="link-fake text-sm woodsmoke-500 fw-semibold">
-                        View <i class="fa-solid fa-link"></i>
+                    <p class="link-fake text-sm zinc-500 fw-semibold">
+                        View <i class="uil uil-arrow-right"></i>
                     </p>
                 </div>
             </a>
@@ -687,11 +719,11 @@
 <!-- Project -->
 
 <!-- Testimoni and contacts -->
-<section id="exp" class="experience pt-50 pb-50">
+<section id="exp" class="experience-testimoni pt-50 pb-50">
     <div class="container-xxl container-fluid">
         <div class="row">
             <div class="col-lg-12 d-flex text-center justify-content-center">
-                <h2 class="woodsmoke-950 text-3xl fw-bold">
+                <h2 class="zinc-50 text-3xl fw-bold">
                     Don't take our world for it <br />
                     <span class="teal-400 text-3xl fw-bold">
                         Trust our customer
@@ -718,13 +750,11 @@
                             <div class="profile-picture"></div>
 
                             <div class="profile-title mt-3 ms-3">
-                                <h2
-                                    class="text-normal woodsmoke-950 fw-semibold"
-                                >
+                                <h2 class="text-normal zinc-50 fw-semibold">
                                     Rahma Dewi
                                 </h2>
                                 <p
-                                    class="text-sm woodsmoke-500 fw-regular"
+                                    class="text-sm zinc-500 fw-regular"
                                     style="margin-top: -4px"
                                 >
                                     @dewirahma
@@ -734,14 +764,14 @@
 
                         <div class="profile-right">
                             <i
-                                class="fa-brands fa-instagram text-4xl fw-medium woodsmoke-900"
+                                class="fa-brands fa-instagram text-4xl fw-medium zinc-100"
                             ></i>
                         </div>
                     </div>
 
                     <!-- Content Comment -->
                     <div class="content-comment mt-2">
-                        <p class="text-sm woodsmoke-900 fw-medium">
+                        <p class="text-sm zinc-100 fw-medium">
                             <span class="teal-400">@Helios </span>is a sleek and
                             well-organized portfolio. It beautifully showcases
                             skills and projects with ease
@@ -759,11 +789,11 @@
                             <div class="like d-flex align-items-center">
                                 <div class="icon-like">
                                     <i
-                                        class="uil uil-heart-alt text-2xl woodsmoke-900"
+                                        class="uil uil-heart-alt text-2xl zinc-500"
                                     ></i>
                                 </div>
                                 <div class="like-increment ms-1 mt-3">
-                                    <p class="text-sm fw-regular woodsmoke-500">
+                                    <p class="text-sm fw-regular zinc-500">
                                         73
                                     </p>
                                 </div>
@@ -772,11 +802,11 @@
                             <div class="comment d-flex align-items-center ms-2">
                                 <div class="icon-like">
                                     <i
-                                        class="uil uil-comment-dots woodsmoke-900 text-2xl"
+                                        class="uil uil-comment-dots zinc-500 text-2xl"
                                     ></i>
                                 </div>
                                 <div class="like-increment ms-1 mt-3">
-                                    <p class="text-sm fw-regular woodsmoke-500">
+                                    <p class="text-sm fw-regular zinc-500">
                                         41
                                     </p>
                                 </div>
@@ -786,10 +816,10 @@
                         <div
                             class="wrapper-datetime d-flex align-items-center mt-3"
                         >
-                            <p class="text-sm woodsmoke-500 fw-regular pe-1">
+                            <p class="text-sm zinc-500 fw-regular pe-1">
                                 08:19 PM
                             </p>
-                            <p class="text-sm woodsmoke-500 fw-regular">
+                            <p class="text-sm zinc-500 fw-regular">
                                 | 24 Sep 2023
                             </p>
                         </div>
@@ -813,13 +843,11 @@
                             <div class="profile-picture-2"></div>
 
                             <div class="profile-title mt-3 ms-3">
-                                <h2
-                                    class="text-normal woodsmoke-950 fw-semibold"
-                                >
+                                <h2 class="text-normal zinc-50 fw-semibold">
                                     Catheline Clain
                                 </h2>
                                 <p
-                                    class="text-sm woodsmoke-500 fw-regular"
+                                    class="text-sm zinc-500 fw-regular"
                                     style="margin-top: -4px"
                                 >
                                     @cathy
@@ -829,14 +857,14 @@
 
                         <div class="profile-right">
                             <i
-                                class="fa-brands fa-x-twitter text-4xl fw-medium woodsmoke-900"
+                                class="fa-brands fa-x-twitter text-4xl fw-medium zinc-100"
                             ></i>
                         </div>
                     </div>
 
                     <!-- Content Comment -->
                     <div class="content-comment mt-2">
-                        <p class="text-sm woodsmoke-900 fw-medium">
+                        <p class="text-sm zinc-100 fw-medium">
                             good work and clean
                         </p>
                     </div>
@@ -852,11 +880,11 @@
                             <div class="like d-flex align-items-center">
                                 <div class="icon-like">
                                     <i
-                                        class="uil uil-heart-alt text-2xl woodsmoke-900"
+                                        class="uil uil-heart-alt text-2xl zinc-500"
                                     ></i>
                                 </div>
                                 <div class="like-increment ms-1 mt-3">
-                                    <p class="text-sm fw-regular woodsmoke-500">
+                                    <p class="text-sm fw-regular zinc-500">
                                         69
                                     </p>
                                 </div>
@@ -865,11 +893,11 @@
                             <div class="comment d-flex align-items-center ms-2">
                                 <div class="icon-like">
                                     <i
-                                        class="uil uil-comment-dots woodsmoke-900 text-2xl"
+                                        class="uil uil-comment-dots zinc-500 text-2xl"
                                     ></i>
                                 </div>
                                 <div class="like-increment ms-1 mt-3">
-                                    <p class="text-sm fw-regular woodsmoke-500">
+                                    <p class="text-sm fw-regular zinc-500">
                                         48
                                     </p>
                                 </div>
@@ -879,10 +907,10 @@
                         <div
                             class="wrapper-datetime d-flex align-items-center mt-3"
                         >
-                            <p class="text-sm woodsmoke-500 fw-regular pe-1">
+                            <p class="text-sm zinc-500 fw-regular pe-1">
                                 10:22 AM
                             </p>
-                            <p class="text-sm woodsmoke-500 fw-regular">
+                            <p class="text-sm zinc-500 fw-regular">
                                 | 26 Sep 2023
                             </p>
                         </div>
@@ -906,13 +934,11 @@
                             <div class="profile-picture-3"></div>
 
                             <div class="profile-title mt-3 ms-3">
-                                <h2
-                                    class="text-normal woodsmoke-950 fw-semibold"
-                                >
+                                <h2 class="text-normal zinc-50 fw-semibold">
                                     Stevans Naedaro
                                 </h2>
                                 <p
-                                    class="text-sm woodsmoke-500 fw-regular"
+                                    class="text-sm zinc-500 fw-regular"
                                     style="margin-top: -4px"
                                 >
                                     @itssteeeve
@@ -922,14 +948,14 @@
 
                         <div class="profile-right">
                             <i
-                                class="fa-brands fa-x-twitter text-4xl fw-medium woodsmoke-900"
+                                class="fa-brands fa-x-twitter text-4xl fw-medium zinc-100"
                             ></i>
                         </div>
                     </div>
 
                     <!-- Content Comment -->
                     <div class="content-comment mt-2">
-                        <p class="text-sm woodsmoke-900 fw-medium">
+                        <p class="text-sm zinc-100 fw-medium">
                             An excellent showcase of talent! The website is
                             beautifully designed and user-friendly. The
                             attention to detail in the presentation of projects
@@ -949,11 +975,11 @@
                             <div class="like d-flex align-items-center">
                                 <div class="icon-like">
                                     <i
-                                        class="uil uil-heart-alt text-2xl woodsmoke-900"
+                                        class="uil uil-heart-alt text-2xl zinc-500"
                                     ></i>
                                 </div>
                                 <div class="like-increment ms-1 mt-3">
-                                    <p class="text-sm fw-regular woodsmoke-500">
+                                    <p class="text-sm fw-regular zinc-500">
                                         48
                                     </p>
                                 </div>
@@ -962,11 +988,11 @@
                             <div class="comment d-flex align-items-center ms-2">
                                 <div class="icon-like">
                                     <i
-                                        class="uil uil-comment-dots woodsmoke-900 text-2xl"
+                                        class="uil uil-comment-dots zinc-500 text-2xl"
                                     ></i>
                                 </div>
                                 <div class="like-increment ms-1 mt-3">
-                                    <p class="text-sm fw-regular woodsmoke-500">
+                                    <p class="text-sm fw-regular zinc-500">
                                         32
                                     </p>
                                 </div>
@@ -976,10 +1002,10 @@
                         <div
                             class="wrapper-datetime d-flex align-items-center mt-3"
                         >
-                            <p class="text-sm woodsmoke-500 fw-regular pe-1">
+                            <p class="text-sm zinc-500 fw-regular pe-1">
                                 09:11 AM
                             </p>
-                            <p class="text-sm woodsmoke-500 fw-regular">
+                            <p class="text-sm zinc-500 fw-regular">
                                 | 31 Sep 2023
                             </p>
                         </div>
@@ -1003,13 +1029,11 @@
                             <div class="profile-picture-4"></div>
 
                             <div class="profile-title mt-3 ms-3">
-                                <h2
-                                    class="text-normal woodsmoke-950 fw-semibold"
-                                >
+                                <h2 class="text-normal zinc-50 fw-semibold">
                                     Emily Jonson
                                 </h2>
                                 <p
-                                    class="text-sm woodsmoke-500 fw-regular"
+                                    class="text-sm zinc-500 fw-regular"
                                     style="margin-top: -4px"
                                 >
                                     @emilyyy
@@ -1019,14 +1043,14 @@
 
                         <div class="profile-right">
                             <i
-                                class="fa-brands fa-discord text-4xl fw-medium woodsmoke-900"
+                                class="fa-brands fa-discord text-4xl fw-medium zinc-100"
                             ></i>
                         </div>
                     </div>
 
                     <!-- Content Comment -->
                     <div class="content-comment mt-2">
-                        <p class="text-sm woodsmoke-900 fw-medium">
+                        <p class="text-sm zinc-100 fw-medium">
                             <span class="teal-400"> @Helios </span>is an
                             exceptional portfolio website! It’s clean,
                             professional, and highlights the creator’s talents
@@ -1046,11 +1070,11 @@
                             <div class="like d-flex align-items-center">
                                 <div class="icon-like">
                                     <i
-                                        class="uil uil-heart-alt text-2xl woodsmoke-900"
+                                        class="uil uil-heart-alt text-2xl zinc-500"
                                     ></i>
                                 </div>
                                 <div class="like-increment ms-1 mt-3">
-                                    <p class="text-sm fw-regular woodsmoke-500">
+                                    <p class="text-sm fw-regular zinc-500">
                                         87
                                     </p>
                                 </div>
@@ -1059,11 +1083,11 @@
                             <div class="comment d-flex align-items-center ms-2">
                                 <div class="icon-like">
                                     <i
-                                        class="uil uil-comment-dots woodsmoke-900 text-2xl"
+                                        class="uil uil-comment-dots zinc-500 text-2xl"
                                     ></i>
                                 </div>
                                 <div class="like-increment ms-1 mt-3">
-                                    <p class="text-sm fw-regular woodsmoke-500">
+                                    <p class="text-sm fw-regular zinc-500">
                                         67
                                     </p>
                                 </div>
@@ -1073,10 +1097,10 @@
                         <div
                             class="wrapper-datetime d-flex align-items-center mt-3"
                         >
-                            <p class="text-sm woodsmoke-500 fw-regular pe-1">
+                            <p class="text-sm zinc-500 fw-regular pe-1">
                                 09:19 AM
                             </p>
-                            <p class="text-sm woodsmoke-500 fw-regular">
+                            <p class="text-sm zinc-500 fw-regular">
                                 | 05 Oct 2023
                             </p>
                         </div>
@@ -1100,13 +1124,11 @@
                             <div class="profile-picture-5"></div>
 
                             <div class="profile-title mt-3 ms-3">
-                                <h2
-                                    class="text-normal woodsmoke-950 fw-semibold"
-                                >
+                                <h2 class="text-normal zinc-50 fw-semibold">
                                     Billie
                                 </h2>
                                 <p
-                                    class="text-sm woodsmoke-500 fw-regular"
+                                    class="text-sm zinc-500 fw-regular"
                                     style="margin-top: -4px"
                                 >
                                     @bill_bill_bill
@@ -1116,14 +1138,14 @@
 
                         <div class="profile-right">
                             <i
-                                class="fa-brands fa-github text-4xl fw-medium woodsmoke-900"
+                                class="fa-brands fa-github text-4xl fw-medium zinc-100"
                             ></i>
                         </div>
                     </div>
 
                     <!-- Content Comment -->
                     <div class="content-comment mt-2">
-                        <p class="text-sm woodsmoke-900 fw-medium">
+                        <p class="text-sm zinc-100 fw-medium">
                             <span class="teal-400">@Helios </span>offers a
                             stunning user experience! It’s beautifully designed
                             and highly functional. The portfolio reflects
@@ -1143,11 +1165,11 @@
                             <div class="like d-flex align-items-center">
                                 <div class="icon-like">
                                     <i
-                                        class="uil uil-heart-alt text-2xl woodsmoke-900"
+                                        class="uil uil-heart-alt text-2xl zinc-500"
                                     ></i>
                                 </div>
                                 <div class="like-increment ms-1 mt-3">
-                                    <p class="text-sm fw-regular woodsmoke-500">
+                                    <p class="text-sm fw-regular zinc-500">
                                         66
                                     </p>
                                 </div>
@@ -1156,11 +1178,11 @@
                             <div class="comment d-flex align-items-center ms-2">
                                 <div class="icon-like">
                                     <i
-                                        class="uil uil-comment-dots woodsmoke-900 text-2xl"
+                                        class="uil uil-comment-dots zinc-500 text-2xl"
                                     ></i>
                                 </div>
                                 <div class="like-increment ms-1 mt-3">
-                                    <p class="text-sm fw-regular woodsmoke-500">
+                                    <p class="text-sm fw-regular zinc-500">
                                         46
                                     </p>
                                 </div>
@@ -1170,10 +1192,10 @@
                         <div
                             class="wrapper-datetime d-flex align-items-center mt-3"
                         >
-                            <p class="text-sm woodsmoke-500 fw-regular pe-1">
+                            <p class="text-sm zinc-500 fw-regular pe-1">
                                 08:09 AM
                             </p>
-                            <p class="text-sm woodsmoke-500 fw-regular">
+                            <p class="text-sm zinc-500 fw-regular">
                                 | 12 Oct 2023
                             </p>
                         </div>
@@ -1197,13 +1219,11 @@
                             <div class="profile-picture-6"></div>
 
                             <div class="profile-title mt-3 ms-3">
-                                <h2
-                                    class="text-normal woodsmoke-950 fw-semibold"
-                                >
+                                <h2 class="text-normal zinc-50 fw-semibold">
                                     Martin Clever
                                 </h2>
                                 <p
-                                    class="text-sm woodsmoke-500 fw-regular"
+                                    class="text-sm zinc-500 fw-regular"
                                     style="margin-top: -4px"
                                 >
                                     @Marrr
@@ -1213,14 +1233,14 @@
 
                         <div class="profile-right">
                             <i
-                                class="fa-brands fa-facebook text-4xl fw-medium woodsmoke-900"
+                                class="fa-brands fa-facebook text-4xl fw-medium zinc-100"
                             ></i>
                         </div>
                     </div>
 
                     <!-- Content Comment -->
                     <div class="content-comment mt-2">
-                        <p class="text-sm woodsmoke-900 fw-medium">
+                        <p class="text-sm zinc-100 fw-medium">
                             Great Job Dude🙌
                         </p>
                     </div>
@@ -1236,11 +1256,11 @@
                             <div class="like d-flex align-items-center">
                                 <div class="icon-like">
                                     <i
-                                        class="uil uil-heart-alt text-2xl woodsmoke-900"
+                                        class="uil uil-heart-alt text-2xl zinc-500"
                                     ></i>
                                 </div>
                                 <div class="like-increment ms-1 mt-3">
-                                    <p class="text-sm fw-regular woodsmoke-500">
+                                    <p class="text-sm fw-regular zinc-500">
                                         88
                                     </p>
                                 </div>
@@ -1249,11 +1269,11 @@
                             <div class="comment d-flex align-items-center ms-2">
                                 <div class="icon-like">
                                     <i
-                                        class="uil uil-comment-dots woodsmoke-900 text-2xl"
+                                        class="uil uil-comment-dots zinc-500 text-2xl"
                                     ></i>
                                 </div>
                                 <div class="like-increment ms-1 mt-3">
-                                    <p class="text-sm fw-regular woodsmoke-500">
+                                    <p class="text-sm fw-regular zinc-500">
                                         55
                                     </p>
                                 </div>
@@ -1263,10 +1283,10 @@
                         <div
                             class="wrapper-datetime d-flex align-items-center mt-3"
                         >
-                            <p class="text-sm woodsmoke-500 fw-regular pe-1">
+                            <p class="text-sm zinc-500 fw-regular pe-1">
                                 12:01 PM
                             </p>
-                            <p class="text-sm woodsmoke-500 fw-regular">
+                            <p class="text-sm zinc-500 fw-regular">
                                 | 28 Oct 2023
                             </p>
                         </div>
@@ -1275,13 +1295,14 @@
             </div>
         </div>
 
+        <!-- Modal -->
         <div
             class="row mt-4 d-flex justify-content-lg-center justify-content-md-center"
         >
             <div class="col-lg-2">
                 <button
                     type="button"
-                    class="py-2 px-4 text-white fw-semibold text-md bg-teal-400 button-comment"
+                    class="py-2 px-3 text-white fw-medium text-md background-900 button-comment"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
                     data-bs-whatever="@mdo"
@@ -1297,10 +1318,10 @@
                     aria-hidden="true"
                 >
                     <div class="modal-dialog">
-                        <div class="modal-content">
+                        <div class="modal-content background-900">
                             <div class="modal-header">
                                 <h1
-                                    class="modal-title fs-5 woodsmoke-900"
+                                    class="modal-title fs-5 zinc-100"
                                     id="exampleModalLabel"
                                 >
                                     New Comment
@@ -1318,12 +1339,12 @@
                                     <div class="mb-3">
                                         <label
                                             for="recipient-name"
-                                            class="col-form-label"
+                                            class="col-form-label zinc-100"
                                             >Name:</label
                                         >
                                         <input
                                             type="text"
-                                            class="form-control"
+                                            class="form-control custom-form"
                                             id="recipient-name"
                                         />
                                     </div>
@@ -1331,11 +1352,11 @@
                                     <div class="mb-3">
                                         <label
                                             for="message-text"
-                                            class="col-form-label"
+                                            class="col-form-label zinc-100 zinc-100"
                                             >Username:</label
                                         >
                                         <input
-                                            class="form-control"
+                                            class="form-control custom-form"
                                             id="message-text"
                                         />
                                     </div>
@@ -1343,11 +1364,11 @@
                                     <div class="mb-3">
                                         <label
                                             for="message-text"
-                                            class="col-form-label"
+                                            class="col-form-label zinc-100"
                                             >Social Media:</label
                                         >
                                         <input
-                                            class="form-control"
+                                            class="form-control custom-form"
                                             id="message-text"
                                         />
                                     </div>
@@ -1355,11 +1376,11 @@
                                     <div class="mb-3">
                                         <label
                                             for="message-text"
-                                            class="col-form-label"
+                                            class="col-form-label zinc-100"
                                             >Your Comment:</label
                                         >
                                         <textarea
-                                            class="form-control"
+                                            class="form-control custom-form"
                                             id="message-text"
                                         ></textarea>
                                     </div>

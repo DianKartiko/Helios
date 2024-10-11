@@ -25,6 +25,11 @@
             href="{{url_for('static', filename='frontend/css/utilities.css')}}"
         />
 
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='frontend/css/templates.css')}}"
+        />
+
         <!-- Fonts Poppins -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,6 +49,15 @@
             href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css"
         />
 
+        <!-- Fonts Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
         <!-- Data AOS -->
         <link
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
@@ -51,13 +65,13 @@
         />
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
-    <body>
+    <body class="background">
         <!-- Navigation -->
         <section class="mt-20 mb-64">
             <nav class="navbar navbar-expand-lg fixed-top background">
                 <div class="container-fluid container-xxl">
                     <a
-                        class="navbar-brand fw-semibold woodsmoke-950 text-2xl"
+                        class="navbar-brand fw-semibold zinc-50 text-2xl"
                         href="{{url_for('home')}}"
                         >Helios</a
                     >
@@ -77,10 +91,12 @@
                         id="navbarNavAltMarkup"
                     >
                         <div
-                            class="navbar-nav woodsmoke-900 fw-medium ms-auto px-lg-3 px-md-0 text-sm fw-regular"
+                            class="navbar-nav zinc-500 fw-medium ms-auto px-lg-3 px-md-0 text-sm fw-regular"
                         >
-                            <a class="nav-link" href="#details">Details</a>
-                            <a class="nav-link" href="#order">Order</a>
+                            <a class="nav-link zinc-100" href="#details"
+                                >Details</a
+                            >
+                            <a class="nav-link zinc-100" href="#order">Order</a>
                         </div>
                     </div>
                 </div>
@@ -109,61 +125,120 @@
                             data-aos="zoom-in"
                             data-aos-duration="300"
                         >
-                            <div class="card" style="width: 20rem">
-                                <div class="card-body">
+                            <div
+                                class="col-lg-8 col-md-6 card-1-testimoni mt-3 mt-md-3"
+                                data-aos="zoom-in"
+                                data-aos-duration="300"
+                            >
+                                <div class="wrapper-testimoni p-3">
+                                    <!-- Profile -->
                                     <div
-                                        class="d-flex align-items-center mb-16"
+                                        class="profile d-flex align-items-center justify-content-between"
                                     >
-                                        <div class="image-testimoni">
-                                            <img
-                                                src="{{url_for('static',filename='assets/svg/avatar-1.svg')}}"
-                                                alt="Card-Icon"
-                                                width="60"
-                                                height="60"
-                                                class="rounded-circle"
-                                                loading="lazy"
-                                            />
+                                        <div
+                                            class="profile-left d-flex align-items-center"
+                                        >
+                                            <!-- Picture -->
+                                            <div class="profile-picture"></div>
+
+                                            <div
+                                                class="profile-title mt-3 ms-3"
+                                            >
+                                                <h2
+                                                    class="text-normal zinc-50 fw-semibold"
+                                                >
+                                                    Rahma Dewi
+                                                </h2>
+                                                <p
+                                                    class="text-sm zinc-500 fw-regular"
+                                                    style="margin-top: -4px"
+                                                >
+                                                    @dewirahma
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div class="text-card ms-2">
-                                            <h5
-                                                class="card-title woodsmoke-950 text-lg fw-semibold"
-                                            >
-                                                Alayya Gafi
-                                            </h5>
-                                            <h6
-                                                class="card-subtitle mb-8 woodsmoke-500 text-sm fw-regular"
-                                            >
-                                                Teacher
-                                            </h6>
+
+                                        <div class="profile-right">
+                                            <i
+                                                class="fa-brands fa-instagram text-4xl fw-medium zinc-500"
+                                            ></i>
                                         </div>
                                     </div>
 
-                                    <div class="content mt-8">
-                                        <div class="d-flex mb-8">
-                                            <i
-                                                class="uis uis-favorite text-2xl star text-start me-2"
-                                            ></i>
-                                            <i
-                                                class="uis uis-favorite text-2xl star text-start me-2"
-                                            ></i>
-                                            <i
-                                                class="uis uis-favorite text-2xl star text-start me-2"
-                                            ></i>
-                                            <i
-                                                class="uis uis-favorite text-2xl star text-start me-2"
-                                            ></i>
-                                            <i
-                                                class="uis uis-favorite text-2xl star text-start me-2"
-                                            ></i>
-                                        </div>
-
-                                        <p
-                                            class="card-text text-normal fw-regular woodsmoke-500"
-                                        >
-                                            Helios has a great design and
-                                            responsibility to create design and
-                                            out of the box.
+                                    <!-- Content Comment -->
+                                    <div class="content-comment mt-2">
+                                        <p class="text-sm zinc-100 fw-medium">
+                                            <span class="teal-400"
+                                                >@Helios </span
+                                            >is a sleek and well-organized
+                                            portfolio. It beautifully showcases
+                                            skills and projects with ease
                                         </p>
+                                    </div>
+
+                                    <!-- Like and Comment -->
+                                    <div
+                                        class="information d-flex align-items-center justify-content-between"
+                                        style="margin-top: -16px"
+                                    >
+                                        <!-- Left: Like and comment -->
+                                        <div
+                                            class="wrapper-like-comment d-flex"
+                                        >
+                                            <!-- Like -->
+                                            <div
+                                                class="like d-flex align-items-center"
+                                            >
+                                                <div class="icon-like">
+                                                    <i
+                                                        class="uil uil-heart-alt text-2xl zinc-500"
+                                                    ></i>
+                                                </div>
+                                                <div
+                                                    class="like-increment ms-1 mt-3"
+                                                >
+                                                    <p
+                                                        class="text-sm fw-regular zinc-500"
+                                                    >
+                                                        73
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- Comment -->
+                                            <div
+                                                class="comment d-flex align-items-center ms-2"
+                                            >
+                                                <div class="icon-like">
+                                                    <i
+                                                        class="uil uil-comment-dots zinc-500 text-2xl"
+                                                    ></i>
+                                                </div>
+                                                <div
+                                                    class="like-increment ms-1 mt-3"
+                                                >
+                                                    <p
+                                                        class="text-sm fw-regular zinc-500"
+                                                    >
+                                                        41
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Right: Date time -->
+                                        <div
+                                            class="wrapper-datetime d-flex align-items-center mt-3"
+                                        >
+                                            <p
+                                                class="text-sm zinc-500 fw-regular pe-1"
+                                            >
+                                                08:19 PM
+                                            </p>
+                                            <p
+                                                class="text-sm zinc-500 fw-regular"
+                                            >
+                                                | 24 Sep 2023
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -174,61 +249,118 @@
                             data-aos="zoom-in"
                             data-aos-duration="500"
                         >
-                            <div class="card mt-12" style="width: 20rem">
-                                <div class="card-body">
+                            <div
+                                class="col-lg-8 col-md-6 card-2-testimoni mt-3 mt-md-3"
+                                data-aos="zoom-in"
+                                data-aos-duration="400"
+                            >
+                                <div class="wrapper-testimoni p-3">
+                                    <!-- Profile -->
                                     <div
-                                        class="d-flex align-items-center mb-16"
+                                        class="profile d-flex align-items-center justify-content-between"
                                     >
-                                        <div class="image-testimoni">
-                                            <img
-                                                src="{{url_for('static',filename='assets/svg/avatar-2.svg')}}"
-                                                alt="Card-Icon"
-                                                width="60"
-                                                height="60"
-                                                class="rounded-circle"
-                                                loading="lazy"
-                                            />
+                                        <div
+                                            class="profile-left d-flex align-items-center"
+                                        >
+                                            <!-- Picture -->
+                                            <div
+                                                class="profile-picture-2"
+                                            ></div>
+
+                                            <div
+                                                class="profile-title mt-3 ms-3"
+                                            >
+                                                <h2
+                                                    class="text-normal zinc-50 fw-semibold"
+                                                >
+                                                    Catheline Clain
+                                                </h2>
+                                                <p
+                                                    class="text-sm zinc-500 fw-regular"
+                                                    style="margin-top: -4px"
+                                                >
+                                                    @cathy
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div class="text-card ms-2">
-                                            <h5
-                                                class="card-title woodsmoke-950 text-lg fw-semibold"
-                                            >
-                                                Antonio Wijaya
-                                            </h5>
-                                            <h6
-                                                class="card-subtitle mb-8 woodsmoke-500 text-sm fw-regular"
-                                            >
-                                                Bussiness Management
-                                            </h6>
+
+                                        <div class="profile-right">
+                                            <i
+                                                class="fa-brands fa-x-twitter text-4xl fw-medium zinc-500"
+                                            ></i>
                                         </div>
                                     </div>
 
-                                    <div class="content mt-8">
-                                        <div class="d-flex mb-8">
-                                            <i
-                                                class="uis uis-favorite text-2xl star text-start me-2"
-                                            ></i>
-                                            <i
-                                                class="uis uis-favorite text-2xl star text-start me-2"
-                                            ></i>
-                                            <i
-                                                class="uis uis-favorite text-2xl star text-start me-2"
-                                            ></i>
-                                            <i
-                                                class="uis uis-favorite text-2xl star text-start me-2"
-                                            ></i>
-                                            <i
-                                                class="uis uis-favorite text-2xl star text-start me-2"
-                                            ></i>
-                                        </div>
-
-                                        <p
-                                            class="card-text text-normal fw-regular woodsmoke-500"
-                                        >
-                                            Fast, responsible, clean design,
-                                            make me feel happy to trust my
-                                            project with Helios.
+                                    <!-- Content Comment -->
+                                    <div class="content-comment mt-2">
+                                        <p class="text-sm zinc-100 fw-medium">
+                                            good work and clean
                                         </p>
+                                    </div>
+
+                                    <!-- Like and Comment -->
+                                    <div
+                                        class="information d-flex align-items-center justify-content-between"
+                                        style="margin-top: -16px"
+                                    >
+                                        <!-- Left: Like and comment -->
+                                        <div
+                                            class="wrapper-like-comment d-flex"
+                                        >
+                                            <!-- Like -->
+                                            <div
+                                                class="like d-flex align-items-center"
+                                            >
+                                                <div class="icon-like">
+                                                    <i
+                                                        class="uil uil-heart-alt text-2xl zinc-500"
+                                                    ></i>
+                                                </div>
+                                                <div
+                                                    class="like-increment ms-1 mt-3"
+                                                >
+                                                    <p
+                                                        class="text-sm fw-regular zinc-500"
+                                                    >
+                                                        69
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- Comment -->
+                                            <div
+                                                class="comment d-flex align-items-center ms-2"
+                                            >
+                                                <div class="icon-like">
+                                                    <i
+                                                        class="uil uil-comment-dots zinc-500 text-2xl"
+                                                    ></i>
+                                                </div>
+                                                <div
+                                                    class="like-increment ms-1 mt-3"
+                                                >
+                                                    <p
+                                                        class="text-sm fw-regular zinc-500"
+                                                    >
+                                                        48
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Right: Date time -->
+                                        <div
+                                            class="wrapper-datetime d-flex align-items-center mt-3"
+                                        >
+                                            <p
+                                                class="text-sm zinc-500 fw-regular pe-1"
+                                            >
+                                                10:22 AM
+                                            </p>
+                                            <p
+                                                class="text-sm zinc-500 fw-regular"
+                                            >
+                                                | 26 Sep 2023
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -253,33 +385,33 @@
                             <div class="mb-8">
                                 <label
                                     for="email"
-                                    class="form-label text-sm fw-regular woodsmoke-500"
+                                    class="form-label text-sm fw-regular zinc-100"
                                     >Email</label
                                 >
                                 <input
                                     type="email"
                                     name="email"
-                                    class="form-control"
+                                    class="form-control custom-form"
                                 />
                             </div>
 
                             <div class="mb-16">
                                 <label
                                     for="name"
-                                    class="form-label text-sm fw-regular woodsmoke-500"
+                                    class="form-label text-sm fw-regular zinc-100"
                                     >Name</label
                                 >
                                 <input
                                     type="text"
                                     name="name"
-                                    class="form-control"
+                                    class="form-control custom-form"
                                 />
                             </div>
 
                             <div class="form-floating mb-16">
                                 <textarea
                                     type="text"
-                                    class="form-control"
+                                    class="form-control custom-form"
                                     id="messageInput"
                                     rows="3"
                                     maxlength="250"
@@ -287,7 +419,8 @@
                                 ></textarea>
                                 <label
                                     for="messageInput"
-                                    class="form-label text-sm fw-regular woodsmoke-500"
+                                    class="form-label message text-sm fw-regular zinc-100"
+                                    style="color: #f4f4f5"
                                     >Message</label
                                 >
                             </div>
@@ -308,7 +441,7 @@
             <div class="container-xxl container-fluid">
                 <div class="row gap-lg">
                     <div class="col-lg-12">
-                        <p class="text-sm woodsmoke-500 fw-medium text-center">
+                        <p class="text-sm zinc-100 fw-medium text-center">
                             &#169; Dian Wicaksono All Right Reserved
                         </p>
                     </div>

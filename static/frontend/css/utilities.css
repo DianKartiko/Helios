@@ -374,20 +374,41 @@
 /*  */
 
 /* Color Palette */
-.woodsmoke-950 {
-    color: #1b1b1b;
+.zinc-50 {
+    color: #fafafa;
 }
 
-.woodsmoke-900 {
-    color: #3d3d3d;
+.zinc-100 {
+    color: #f4f4f5;
 }
 
-.woodsmoke-500 {
-    color: #6d6d6d;
+.zinc-200 {
+    color: #e4e4e7;
+}
+
+.zinc-300 {
+    color: #d4d4d8;
+}
+
+.zinc-500 {
+    color: #71717a;
+}
+
+.zinc-900{
+    color: #18181b;
 }
 
 .background {
-    background-color: #fefefe;
+    background-color: #09090b;
+}
+
+.background-900{
+    background-color: #18181b;
+}
+
+
+.background-500{
+    background-color: #71717a;
 }
 
 .teal-400 {
