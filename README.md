@@ -1,3 +1,7 @@
+# What's News?
+
+Currently, I am learning how to create more informative designs that align with business needs, so that my portfolio can focus more effectively on delivering information. I am also implementing the atomic design system using Flask and Bootstrap 5.3, while exploring how the backend side of Flask operates.
+
 # Flask Project Setup Guide
 
 Welcome to the Flask Project! This guide will help you clone and set up the project on your local machine, including activating the virtual environment and installing all dependencies to get you started.
