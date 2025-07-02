@@ -1,5 +1,45 @@
 {%extends 'base/base.html'%}
 
 <!-- Content -->
-{%block content%} {%endblock%}
+{%block content%}
+
+<!-- ===== Header Section ===== -->
+<section class="home-section">
+    <div class="header-content col-12">
+        <h2 class="header-home">Hello passengers</h2>
+        <p class="text-content">
+            With 10 years mastering fish farming, I now bridge aquaculture with
+            cutting-edge technology. As an entrepreneur and self-taught
+            developer, I combine fisheries expertise with AI to create
+            sustainable solutions. From pond to Python transforming traditional
+            practices through innovation.
+        </p>
+
+        <div class="social_links">
+            {%for item in social_media%}
+            <a
+                href="{{item.url}}"
+                target="_blank"
+                aria-label="{{item.name}}"
+                class="items-social"
+                ><i class="fa-brands {{item.icon}}"></i
+            ></a>
+            {%endfor%}
+        </div>
+    </div>
+</section>
+<!-- ===== Header Section ===== -->
+
+<!-- ===== Articles Section ===== -->
+<section class="articles-section col-12">
+    <div class="articles-content">
+        <div class="articles-datetime">
+            <span></span>
+            <time datetime="2025-07-02">July 2, 2025</time>
+        </div>
+    </div>
+</section>
+<!-- ===== Articles Section ===== -->
+
+{%endblock%}
 <!-- Content -->
