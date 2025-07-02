@@ -1,4 +1,4 @@
-:root{
+:root {
     /* Color */
     --zinc-950: hsl(240, 7%, 4%);
     --zinc-900: hsl(240, 6%, 10%);
@@ -10,75 +10,70 @@
     --teal-400: hsl(173, 100%, 42%);
 
     /* Font */
-    --font-primary: 'inter', serif;
+    --font-primary: "inter", serif;
 
     /* Font Size */
-    --font-xs : 0.75rem; /* 12px */
-    --font-sm : 0.875rem; /* 14px */
-    --font-md : 1rem; /* 16px */
-    --font-lg : 1.125rem; /* 18px */
-    --font-xl : 1.5rem; /* 24px */
-    --font-2xl : 2rem; /* 32px */
-    --font-3xl : 2.5rem; /* 40px */
+    --font-xs: 0.75rem; /* 12px */
+    --font-sm: 0.875rem; /* 14px */
+    --font-md: 1rem; /* 16px */
+    --font-lg: 1.125rem; /* 18px */
+    --font-xl: 1.5rem; /* 24px */
+    --font-2xl: 2rem; /* 32px */
+    --font-3xl: 2.5rem; /* 40px */
 
     /* Spacing */
-    --spacing-1 : 0.25rem; /* 4px */
-    --spacing-2 : 0.5rem; /* 8px */
-    --spacing-3 : 0.75rem; /* 12px */
-    --spacing-4 : 1rem; /* 16px */
-    --spacing-5 : 1.5rem; /* 24px */
+    --spacing-1: 0.25rem; /* 4px */
+    --spacing-2: 0.5rem; /* 8px */
+    --spacing-3: 0.75rem; /* 12px */
+    --spacing-4: 1rem; /* 16px */
+    --spacing-5: 1.5rem; /* 24px */
 
     /* Font Weigth */
     --font-regular: 400;
     --font-medium: 500;
     --font-semibold: 600;
     --font-bold: 700;
-
-    /* Width */
-    --width-full : 100%;
-    --width-content: 86%;
 }
 
 /* Color And Background Color */
 
-.bg-prymary{
+.bg-prymary {
     background-color: var(---zinc-950);
 }
 
-.bg-secondary{
+.bg-secondary {
     background-color: var(---zinc-900);
 }
 
-.zinc-950{
+.zinc-950 {
     color: var(---zinc-950);
 }
 
-.zinc-900{
+.zinc-900 {
     color: var(---zinc-900);
 }
 
-.zinc-700{
+.zinc-700 {
     color: var(---zinc-700);
 }
 
-.zinc-500{
+.zinc-500 {
     color: var(---zinc-500);
 }
 
-.zinc-300{
+.zinc-300 {
     color: var(---zinc-300);
 }
 
-.zinc-100{
+.zinc-100 {
     color: var(---zinc-100);
 }
 
-.zinc-50{
+.zinc-50 {
     color: var(---zinc-50);
 }
 
 /* Color And Background Color */
-
 
 /* Font Size */
 .text-xs {
@@ -92,7 +87,7 @@
 }
 
 .text-base {
-    font-size: var(--font-md);  /* 16px */
+    font-size: var(--font-md); /* 16px */
     line-height: 1.5rem; /* 24px */
 }
 
@@ -125,7 +120,6 @@
     font-size: var(--font-5xl); /* 64px */
     line-height: 4.5rem; /* 72px */
 }
-
 
 /* Font Size */
 
@@ -285,7 +279,6 @@
 
 /* === Padding === */
 
-
 /* === Margin === */
 
 /* Margin X */
@@ -307,7 +300,7 @@
 
 .mx-5 {
     margin-inline: var(--spacing-5); /* 24px */
-}   
+}
 
 /* Margin X */
 
@@ -439,6 +432,6 @@
 }
 /* === Container === */
 
-.font-base{
+.font-base {
     font-family: var(--font-primary);
 }
