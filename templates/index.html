@@ -8,13 +8,14 @@
     <div class="header-content col-12">
         <h2 class="header-home">Hello passengers</h2>
         <p class="text-content">
-            With 10 years mastering fish farming, I now bridge aquaculture with
-            cutting-edge technology. As an entrepreneur and self-taught
-            developer, I combine fisheries expertise with AI to create
-            sustainable solutions. From pond to Python transforming traditional
-            practices through innovation.
+            I am Dian Wicaksono, with 10 years mastering fish farming, I now
+            bridge aquaculture with cutting-edge technology. As an entrepreneur
+            and self-taught developer, I combine fisheries expertise with AI to
+            create sustainable solutions. From pond to Python transforming
+            traditional practices through innovation.
         </p>
 
+        <!-- Link Social Media -->
         <div class="social_links">
             {%for item in social_media%}
             <a
@@ -32,14 +33,56 @@
 
 <!-- ===== Articles Section ===== -->
 <section class="articles-section col-12">
-    <div class="articles-content">
+    <h2 class="articles-title">Latest Articles</h2>
+    <a href="#" class="articles-content">
         <div class="articles-datetime">
             <span></span>
             <time datetime="2025-07-02">July 2, 2025</time>
         </div>
-    </div>
+        <div class="articles-content-inner">
+            <h2 class="articles-title-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+                soluta.
+            </h2>
+            <p class="articles-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit veniam amet, quis quisquam placeat error ad? Molestias
+                iure dicta dolores deleniti impedit sequi! Deserunt, esse.
+            </p>
+            <a href="#" class="articles-link"
+                >Read articles
+                <i class="fa-solid fa-angle-right articles-link-icon"></i
+            ></a>
+        </div>
+    </a>
 </section>
 <!-- ===== Articles Section ===== -->
 
+<!-- ===== Experience & Contact Section ===== -->
+<section class="experience-section col-12">
+    <!-- Contact  -->
+    <div class="contact-content">
+        <div class="contact-header">
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <h2 class="contact-header-title">Stay with me</h2>
+        </div>
+        <div class="contact-description">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia,
+                ipsum.
+            </p>
+        </div>
+        <span class="form-contact">
+            <input
+                type="text"
+                placeholder="Type messages"
+                aria-label="message-area"
+                required
+                class="form-contact-input"
+            />
+        </span>
+    </div>
+</section>
+<!-- ===== Experience & Contact Section ===== -->
 {%endblock%}
 <!-- Content -->
