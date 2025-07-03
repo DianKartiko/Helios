@@ -1,23 +1,28 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 """Link Sosial Media"""
 social_media = [
         {
             'name' : 'X',
-            'url' : 'https://twitter.com',
+            'url' : os.getenv('URL_X'),
             'icon' : "fa-x-twitter"
         },
         {
             'name' : 'Instagram',
-            'url' : 'https://instagram.com',
+            'url' : os.getenv('URL_INSTAGRAM'),
             'icon' : "fa-instagram"
         },
         {
             'name' : 'Github',
-            'url' : 'https://github.com',
+            'url' : os.getenv('URL_GITHUB'),
             'icon' : "fa-github"
         },
         {
             'name' : 'LinkedIn',
-            'url' : 'https://www.linkedin.com/in/dian-wicaksono/',
+            'url' : os.getenv('URL_LINKEDIN'),
             'icon' : "fa-linkedin"
         }
     ]
