@@ -3,9 +3,18 @@
 <!-- title -->
 {%block title%} Helios {%endblock%}
 
+<!-- Style -->
+{%block style%}
+<link
+    rel="stylesheet"
+    href="{{url_for('static', filename='frontend/css/style.css')}}"
+/>
+{%endblock%}
+
 <!-- Content -->
 {%block content%}
-<!-- Navbar -->
+
+<!-- NavBar Section -->
 <section class="mt-20 mb-64">
     <nav class="navbar navbar-expand-lg fixed-top background">
         <div class="container-fluid container-xxl">
@@ -49,16 +58,19 @@
     <div class="container-xxl container-fluid">
         <div class="row gap-lg-0 gap-5">
             <div class="col-lg-8 col-12 my-auto">
+                <h1 class="fw-semibold text-black-950 text-4xl">
+                    Hey👋, I'm Dian!
+                </h1>
+
                 <div class="d-flex align-items-center">
-                    <div class="photo-profile mb-3"></div>
-                    <p class="ms-2 text-support text-xl teal-400 fw-semibold">
-                        Dian Wicaksono
+                    <span
+                        class="ping p-2 bg-danger border border-light rounded-circle animate-ping animate-ping-slow"
+                    ></span>
+                    <p class="text-normal fw-medium text-black-950/">
+                        Available for Projects
                     </p>
                 </div>
-                <h1 class="header-title zinc-50 fw-bold text-5xl">
-                    Designer, Frontend Developer and Internet of Things
-                    Enthusiast
-                </h1>
+
                 <p class="mt-32 text-normal zinc-500 fw-regular">
                     A creative designer and junior programmer dedicated to
                     developing innovative solutions for products and businesses,
@@ -96,92 +108,6 @@
     </div>
 </section>
 <!-- Home Section -->
-
-<!-- slider -->
-<section id="slider" class="slider">
-    <div class="container-fluid container-xxl">
-        <div class="slider">
-            <div
-                class="slide-track d-flex justify-content-center align-items-center"
-            >
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/html.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">HTML5</p>
-                </div>
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/css.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">CSS3</p>
-                </div>
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/javascripts.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">JavaScript</p>
-                </div>
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/bootstrap.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">Bootstrap</p>
-                </div>
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/tailwind-css.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">TailwindCSS</p>
-                </div>
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/python.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">Python</p>
-                </div>
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/arduino.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">Arduino</p>
-                </div>
-
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/figma.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">Figma</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- slider -->
 
 <!-- About Section -->
 <section id="about" class="about pt-50 pb-50">
@@ -445,7 +371,7 @@
 <!-- Resume -->
 
 <!-- Articles -->
-<div class="articles pt-50 pb-50" id="articles">
+<section class="articles pt-50 pb-50" id="articles">
     <div class="container-xxl container-fluid">
         <div class="row">
             <div class="col-lg-8">
@@ -462,7 +388,7 @@
             </div>
 
             <!-- Bawah -->
-            <div class="wrapper-articles mt-4" style="margin-left: 12px">
+            <article class="wrapper-articles mt-4" style="margin-left: 12px">
                 <div class="article-1 d-flex align-items-center">
                     <div class="col-lg-2 px-1">
                         <h2 class="text-sm zinc-500 fw-regular">
@@ -470,7 +396,7 @@
                         </h2>
                     </div>
 
-                    <a href="{{url_for('articles')}}" class="col-lg-6">
+                    <a href="#" class="col-lg-6">
                         <h2 class="zinc-100 fw-semibold text-normal">
                             Deploying Python Projects on GitHub
                         </h2>
@@ -483,10 +409,10 @@
                         <p class="teal-400 text-sm fw-medium">Read Article ></p>
                     </a>
                 </div>
-            </div>
+            </article>
         </div>
     </div>
-</div>
+</section>
 <!-- Articles -->
 
 <!-- Project -->
@@ -513,7 +439,7 @@
         <div class="row gap-lg justify-content-center d-flex">
             <!-- Card-1 -->
             <a
-                href="{{url_for('exotic')}}"
+                href="#"
                 class="wrapping-card col-lg-4 col-md-6"
                 data-aos="zoom-in"
                 data-aos-duration="300"
@@ -547,7 +473,7 @@
 
             <!-- Card-2 -->
             <a
-                href="{{url_for('linear')}}"
+                href="#"
                 class="wrapping-card col-lg-4 col-md-6"
                 data-aos="zoom-in"
                 data-aos-duration="400"
@@ -580,7 +506,7 @@
 
             <!-- Card-3 -->
             <a
-                href="{{url_for('nest')}}"
+                href="#"
                 class="wrapping-card col-lg-4 col-md-6"
                 data-aos="zoom-in"
                 data-aos-duration="500"
@@ -614,7 +540,7 @@
 
             <!-- Card-4 -->
             <a
-                href="{{url_for('steps')}}"
+                href="#"
                 class="wrapping-card col-lg-4 col-md-6"
                 data-aos="zoom-in"
                 data-aos-duration="600"
@@ -648,7 +574,7 @@
 
             <!-- Card-5 -->
             <a
-                href="{{url_for('otto')}}"
+                href="#"
                 class="wrapping-card col-lg-4 col-md-6"
                 data-aos="zoom-in"
                 data-aos-duration="700"
@@ -682,7 +608,7 @@
 
             <!-- Card-6 -->
             <a
-                href="{{url_for('buddaya')}}"
+                href="#"
                 class="wrapping-card col-lg-4 col-md-6"
                 data-aos="zoom-in"
                 data-aos-duration="800"

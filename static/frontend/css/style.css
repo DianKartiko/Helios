@@ -35,6 +35,7 @@
 body {
     scrollbar-width: thin; /* Lebar tipis */
     scrollbar-color: #71717a #3f3f46; /* Warna thumb dan track */
+    font-family: "Inter", sans-serif;
 }
 
 .navbar-brand:hover{
@@ -53,6 +54,14 @@ body {
 .icon a:hover {
     color: #a3a3a3;
 }
+
+.ping {
+    background-color: #22c55e;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+}
+
 
 /* Button CV */
 .button a {
