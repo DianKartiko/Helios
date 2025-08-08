@@ -3,6 +3,10 @@
     .navbar-nav {
         padding-inline: 0.75rem;
     }
+
+    .header-title {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -45,6 +49,7 @@ body {
     color: #2dd4bf;
 }
 
+
 /* Button Social Media */
 .icon a {
     display: inline;
@@ -76,7 +81,7 @@ body {
 }
 
 .date {
-    border-left: 1px solid #b0b0b0;
+    border-left: 2px solid #18181b;
 }
 
 /* Style Slider */
@@ -390,7 +395,7 @@ body {
 
 .wrapper-articles{
     box-sizing: border-box;
-    border-left: 0.5px solid rgba(209, 209, 209, 0.5);
+    border-left: 0.5px solid #18181b;
 }
 
 .wrapper-articles a{
@@ -553,4 +558,9 @@ body {
     .card-6-testimoni {
         margin-top: -44px;
     }
+}
+
+
+.service-border{
+    border: 1px solid #18181b;
 }

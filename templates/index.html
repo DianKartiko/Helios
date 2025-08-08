@@ -55,7 +55,7 @@
                         Dian Wicaksono
                     </p>
                 </div>
-                <h1 class="header-title zinc-50 fw-bold text-5xl">
+                <h1 class="header-title zinc-50 fw-bold text-2xl">
                     Designer, Frontend Developer and Internet of Things
                     Enthusiast
                 </h1>
@@ -66,30 +66,16 @@
                     fresh, practical ideas that drive success.
                 </p>
                 <div class="d-flex gap-4 mt-12 mb-24 icon">
+                    {%for social in socials%}
+
                     <a
-                        href="https://github.com/DianKartiko"
+                        href="{{social.link}}"
                         class="text-3xl zinc-500"
                         target="_blank"
-                        ><i class="uil uil-github"></i
+                        ><i class="{{social.icon}}"></i
                     ></a>
-                    <a
-                        href="https://x.com/BaseleusNara?t=sWKqvIRNvp-E9aKY7dRxew&s=09"
-                        class="text-3xl zinc-500"
-                        target="_blank"
-                        ><i class="fa-brands fa-x-twitter"></i
-                    ></a>
-                    <a
-                        href="https://www.instagram.com/helios.ui?igsh=OW1sZmszc2hycW90"
-                        class="text-3xl zinc-500"
-                        target="_blank"
-                        ><i class="uil uil-instagram"></i
-                    ></a>
-                    <a
-                        href="https://www.linkedin.com/in/dian-wicaksono-b729a6272/"
-                        class="text-3xl zinc-500"
-                        target="_blank"
-                        ><i class="uil uil-linkedin"></i
-                    ></a>
+
+                    {%endfor%}
                 </div>
             </div>
         </div>
@@ -104,79 +90,19 @@
             <div
                 class="slide-track d-flex justify-content-center align-items-center"
             >
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/html.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">HTML5</p>
-                </div>
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/css.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">CSS3</p>
-                </div>
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/javascripts.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">JavaScript</p>
-                </div>
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/bootstrap.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">Bootstrap</p>
-                </div>
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/tailwind-css.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">TailwindCSS</p>
-                </div>
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/python.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">Python</p>
-                </div>
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/arduino.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">Arduino</p>
-                </div>
 
-                <div class="slide d-flex align-items-center gap-3">
-                    <img
-                        src="../static/assets/svg/figma.svg"
-                        height="48"
-                        width="48"
-                        alt=""
-                    />
-                    <p class="text-lg pt-3 fw-semibold zinc-500">Figma</p>
-                </div>
+                {%for svg in svgs%}
+                    <div class="slide d-flex align-items-center gap-3">
+                        <img
+                            src="{{svg.svg}}"
+                            height="48"
+                            width="48"
+                            alt=""
+                        />
+                        <p class="text-lg pt-3 fw-semibold zinc-500">{{svg.label}}</p>
+                    </div>
+                {%endfor%}
+
             </div>
         </div>
     </div>
@@ -190,11 +116,8 @@
             <!-- About grid -->
             <div class="col-lg-6">
                 <!-- Heading -->
-                <h2 class="text-normal fw-semibold zinc-100 text-start mb-32">
-                    <i
-                        class="uil uil-user-circle text-2xl zinc-500 me-2 text-start"
-                    ></i
-                    >About Me
+                <h2 class="text-lg fw-semibold zinc-100 text-start mb-16">
+                    About Me
                 </h2>
                 <!-- Heading -->
                 <p class="about-text text-normal fw-regular zinc-500">
@@ -215,82 +138,56 @@
             <!-- What i do -->
             <div class="col-lg-6 what">
                 <!-- Heading -->
-                <h4 class="text-normal fw-semibold text-start mb-24 zinc-100">
-                    <i class="uil uil-edit-alt text-2xl zinc-500 me-2"></i
-                    >Services
+                <h4 class="text-lg fw-semibold text-start mb-16 zinc-100">
+                    Services
                 </h4>
                 <!-- Heading -->
 
-                <!-- 1 -->
-                <div
-                    class="d-flex gap-4 justify-content-center align-items-center"
-                >
-                    <div class="design">
-                        <img
-                            src="../static/assets/svg/figma.svg"
-                            alt="About-icon"
-                            width="64"
-                            height="64"
-                            loading="lazy"
-                        />
+                <div class="d-flex gap-2 flex-wrap flex-lg-nowrap">
+                    <!-- 1 -->
+                    <div
+                        class="d-flex gap-4 justify-content-center align-items-center px-8 py-8 service-border"
+                    >
+                        <div>
+                            <h4 class="text-normal fw-medium zinc-100">
+                                UI/UX Design
+                            </h4>
+                            <p class="text-sm fw-regular zinc-500">
+                                Skilled in design, wireframing, and prototyping
+                                using tools like Figma, delivering intuitive and
+                                engaging user experiences.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="text-lg fw-semibold zinc-100">
-                            UI/UX Design
-                        </h4>
-                        <p class="text-sm fw-regular zinc-500">
-                            Skilled in design, wireframing, and prototyping
-                            using tools like Figma, delivering intuitive and
-                            engaging user experiences.
-                        </p>
-                    </div>
-                </div>
 
-                <!-- 2 -->
-                <div
-                    class="d-flex gap-4 justify-content-center align-items-center"
-                >
-                    <div class="design">
-                        <img
-                            src="../static/assets/svg/vscode.svg"
-                            alt="About-icon"
-                            width="64"
-                            height="64"
-                            loading="lazy"
-                        />
+                    <!-- 2 -->
+                    <div
+                        class="d-flex gap-4 justify-content-center align-items-center py-8 px-8 service-border"
+                    >
+                        <div>
+                            <h4 class="text-lg fw-medium zinc-100">Web Design</h4>
+                            <p class="text-sm fw-regular zinc-500">
+                                Skilled in slicing designs from Figma using HTML,
+                                CSS3, JavaScript, and other technologies to create
+                                responsive web interfaces.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="text-lg fw-semibold zinc-100">Web Design</h4>
-                        <p class="text-sm fw-regular zinc-500">
-                            Skilled in slicing designs from Figma using HTML,
-                            CSS3, JavaScript, and other technologies to create
-                            responsive web interfaces.
-                        </p>
-                    </div>
-                </div>
 
-                <!-- 3 -->
-                <div
-                    class="d-flex gap-4 justify-content-center align-items-center"
-                >
-                    <div class="design">
-                        <img
-                            src="../static/assets/svg/python.svg"
-                            alt="About-icon"
-                            width="64"
-                            height="64"
-                            loading="lazy"
-                        />
-                    </div>
-                    <div>
-                        <h4 class="text-lg fw-semibold zinc-100">
-                            Programming
-                        </h4>
-                        <p class="text-sm fw-regular zinc-500">
-                            Knowledgeable in fundamental programming concepts
-                            using various languages such as Python, C, and
-                            JavaScript.
-                        </p>
+                    <!-- 3 -->
+                    <div
+                        class="d-flex gap-4 justify-content-center align-items-center py-8 px-8 service-border"
+                    >
+                        <div>
+                            <h4 class="text-lg fw-medium zinc-100">
+                                Programming
+                            </h4>
+                            <p class="text-sm fw-regular zinc-500">
+                                Knowledgeable in fundamental programming concepts
+                                using various languages such as Python, C, and
+                                JavaScript.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -305,11 +202,8 @@
         <div class="row gap-lg d-flex">
             <div class="col-lg-8">
                 <!-- Heading -->
-                <h2 class="text-normal fw-semibold zinc-100 text-start mb-32">
-                    <i
-                        class="uil uil-graduation-cap text-3xl zinc-500 text-start me-2"
-                    ></i
-                    >Education
+                <h2 class="text-lg fw-semibold zinc-100 text-start mb-16">
+                    Education
                 </h2>
 
                 <!-- Binus -->
@@ -356,12 +250,9 @@
             <div class="col-lg-4 experience h-75">
                 <div class="wrapper-exp p-4">
                     <h2
-                        class="text-normal fw-semibold mb-24 text-start zinc-100"
+                        class="text-lg fw-semibold mb-16 text-start zinc-100"
                     >
-                        <i
-                            class="uil uil-bag text-2xl zinc-500 text-start me-2"
-                        ></i
-                        >Experience
+                        Experience
                     </h2>
 
                     <!-- Work 1 -->
@@ -449,7 +340,7 @@
     <div class="container-xxl container-fluid">
         <div class="row">
             <div class="col-lg-8">
-                <h2 class="zinc-100 text-4xl text-start">
+                <h2 class="zinc-100 text-2xl text-start">
                     Articles Highlighting <br />
                     My Passion for Coding and User Experience
                 </h2>
@@ -470,7 +361,7 @@
                         </h2>
                     </div>
 
-                    <a href="{{url_for('articles')}}" class="col-lg-6">
+                    <a href="#" class="col-lg-6">
                         <h2 class="zinc-100 fw-semibold text-normal">
                             Deploying Python Projects on GitHub
                         </h2>
@@ -495,10 +386,7 @@
         <div class="row gap-lg mb-24">
             <div class="col-lg-6">
                 <h1 class="text-xl fw-semibold mb-16 text-start zinc-100">
-                    <i
-                        class="uil uil-scenery text-2xl zinc-500 text-start me-2"
-                    ></i
-                    >Gallery
+                    Gallery
                 </h1>
                 <p
                     class="text-sm fw-regular zinc-500 text-start text-project-heading"
@@ -513,7 +401,7 @@
         <div class="row gap-lg justify-content-center d-flex">
             <!-- Card-1 -->
             <a
-                href="{{url_for('exotic')}}"
+                href=""
                 class="wrapping-card col-lg-4 col-md-6"
                 data-aos="zoom-in"
                 data-aos-duration="300"
@@ -547,7 +435,7 @@
 
             <!-- Card-2 -->
             <a
-                href="{{url_for('linear')}}"
+                href=""
                 class="wrapping-card col-lg-4 col-md-6"
                 data-aos="zoom-in"
                 data-aos-duration="400"
@@ -580,7 +468,7 @@
 
             <!-- Card-3 -->
             <a
-                href="{{url_for('nest')}}"
+                href=""
                 class="wrapping-card col-lg-4 col-md-6"
                 data-aos="zoom-in"
                 data-aos-duration="500"
@@ -614,7 +502,7 @@
 
             <!-- Card-4 -->
             <a
-                href="{{url_for('steps')}}"
+                href=""
                 class="wrapping-card col-lg-4 col-md-6"
                 data-aos="zoom-in"
                 data-aos-duration="600"
@@ -648,7 +536,7 @@
 
             <!-- Card-5 -->
             <a
-                href="{{url_for('otto')}}"
+                href=""
                 class="wrapping-card col-lg-4 col-md-6"
                 data-aos="zoom-in"
                 data-aos-duration="700"
@@ -682,7 +570,7 @@
 
             <!-- Card-6 -->
             <a
-                href="{{url_for('buddaya')}}"
+                href=""
                 class="wrapping-card col-lg-4 col-md-6"
                 data-aos="zoom-in"
                 data-aos-duration="800"
@@ -1289,119 +1177,6 @@
                             <p class="text-sm zinc-500 fw-regular">
                                 | 28 Oct 2023
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal -->
-        <div
-            class="row mt-4 d-flex justify-content-lg-center justify-content-md-center"
-        >
-            <div class="col-lg-2">
-                <button
-                    type="button"
-                    class="py-2 px-3 text-white fw-medium text-md background-900 button-comment"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                    data-bs-whatever="@mdo"
-                >
-                    Post Comment
-                </button>
-
-                <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                >
-                    <div class="modal-dialog">
-                        <div class="modal-content background-900">
-                            <div class="modal-header">
-                                <h1
-                                    class="modal-title fs-5 zinc-100"
-                                    id="exampleModalLabel"
-                                >
-                                    New Comment
-                                </h1>
-                                <button
-                                    type="button"
-                                    class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                ></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <!-- Name -->
-                                    <div class="mb-3">
-                                        <label
-                                            for="recipient-name"
-                                            class="col-form-label zinc-100"
-                                            >Name:</label
-                                        >
-                                        <input
-                                            type="text"
-                                            class="form-control custom-form"
-                                            id="recipient-name"
-                                        />
-                                    </div>
-                                    <!-- Username -->
-                                    <div class="mb-3">
-                                        <label
-                                            for="message-text"
-                                            class="col-form-label zinc-100 zinc-100"
-                                            >Username:</label
-                                        >
-                                        <input
-                                            class="form-control custom-form"
-                                            id="message-text"
-                                        />
-                                    </div>
-                                    <!-- Pickup you Social Media -->
-                                    <div class="mb-3">
-                                        <label
-                                            for="message-text"
-                                            class="col-form-label zinc-100"
-                                            >Social Media:</label
-                                        >
-                                        <input
-                                            class="form-control custom-form"
-                                            id="message-text"
-                                        />
-                                    </div>
-                                    <!-- Pickup you Social Media -->
-                                    <div class="mb-3">
-                                        <label
-                                            for="message-text"
-                                            class="col-form-label zinc-100"
-                                            >Your Comment:</label
-                                        >
-                                        <textarea
-                                            class="form-control custom-form"
-                                            id="message-text"
-                                        ></textarea>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button
-                                    type="button"
-                                    class="btn btn-danger"
-                                    data-bs-dismiss="modal"
-                                >
-                                    Close
-                                </button>
-                                <button
-                                    type="button"
-                                    class="py-2 px-4 bg-teal-400 text-white fw-semibold"
-                                    style="border: none; border-radius: 8px"
-                                >
-                                    Comment
-                                </button>
-                            </div>
                         </div>
                     </div>
                 </div>
